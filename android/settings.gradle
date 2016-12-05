@@ -1,0 +1,3 @@
+rootProject.name = 'Pinz'
+
+include ':app'
