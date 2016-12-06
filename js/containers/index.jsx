@@ -4,11 +4,11 @@ import ViewContainer from '../components/ViewContainer'
 import Map from '../components/Map'
 
 export default class Root extends Component {
-    render() {
-        return(
-            <ViewContainer>
-                <Map />
-            </ViewContainer>
-        );
-    }
+  render() {
+    return(
+      <ViewContainer>
+        <Map />
+      </ViewContainer>
+    );
+  }
 }
