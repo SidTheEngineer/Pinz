@@ -22,6 +22,7 @@ const Map = () => (
       longitudeDelta: 0.0421,
     }}
     style={styles.map}
+    provider="google"
   />
 );
 
