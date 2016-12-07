@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { AppRegistry, View } from 'react-native';
-import Root from './js/containers'
+import React from 'react';
+import { AppRegistry } from 'react-native';
+import Root from './js/containers';
 
 AppRegistry.registerComponent('Pinz', () => Root);
