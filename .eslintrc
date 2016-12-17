@@ -1,0 +1,11 @@
+{
+  "extends": "airbnb",
+  "rules": {
+
+    // Remove trailing comma error.
+    "comma-dangle": 0,
+
+    // Remove .jsx filename for JSX restriction.
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
+  }
+}
