@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { View, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -11,12 +11,15 @@ const styles = StyleSheet.create({
 
 // Default presentational component that can be used
 // throughout the app.
-export default class ViewContainer extends Component {
-  render() {
-    return (
-      <View style={styles.viewContainer}>
-        {this.props.children}
-      </View>
-    );
-  }
-}
+const ViewContainer = ({ children }) => (
+  <View style={styles.viewContainer}>
+    { children }
+  </View>
+);
+
+ViewContainer.propTypes = {
+  children: React.PropTypes.element
+};
+
+
+export default ViewContainer;
