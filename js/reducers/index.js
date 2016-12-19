@@ -1,14 +1,8 @@
 import { combineReducers } from 'redux';
-
-const root = (state = {}, action) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
+import map from './map';
 
 const rootReducer = combineReducers({
-  root
+  map
 });
 
 export default rootReducer;
