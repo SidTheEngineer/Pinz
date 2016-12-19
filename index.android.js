@@ -2,12 +2,12 @@ import React from 'react';
 import { AppRegistry } from 'react-native';
 import { Provider } from 'react-redux';
 import store from './js/store';
-import Root from './js/containers';
+import Map from './js/containers/Map';
 
-const root = () => (
+const MapRoot = () => (
   <Provider store={store}>
-    <Root />
+    <Map />
   </Provider>
 );
 
-AppRegistry.registerComponent('Pinz', () => root);
+AppRegistry.registerComponent('Pinz', () => MapRoot);

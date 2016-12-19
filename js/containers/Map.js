@@ -3,6 +3,7 @@ import { StyleSheet } from 'react-native';
 import MapView from 'react-native-maps';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import ViewContainer from '../components/ViewContainer';
 
 const styles = StyleSheet.create({
   map: {
@@ -11,13 +12,15 @@ const styles = StyleSheet.create({
 });
 
 const Map = props => (
-  <MapView
-    region={props.map.initialRegion}
-    style={styles.map}
-    provider="google"
-    scrollEnabled={false}
-    zoomEnabled={false}
-  />
+  <ViewContainer>
+    <MapView
+      region={props.map.initialRegion}
+      style={styles.map}
+      provider="google"
+      scrollEnabled={false}
+      zoomEnabled={false}
+    />
+  </ViewContainer>
 );
 
 Map.propTypes = {
