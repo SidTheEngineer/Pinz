@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { View, StyleSheet, StatusBar } from 'react-native';
 import MapView from 'react-native-maps';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -13,6 +13,9 @@ const styles = StyleSheet.create({
 
 const Map = props => (
   <ViewContainer>
+    <StatusBar
+      hidden
+    />
     <MapView
       region={props.map.initialRegion}
       style={styles.map}
