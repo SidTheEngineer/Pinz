@@ -21,10 +21,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 project.xcworkspace
-<<<<<<< HEAD
 Pods/
-=======
->>>>>>> 9c8baa72135442c33d49c46317acadfb0c73abca
 
 # Android/IJ
 #
