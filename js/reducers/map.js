@@ -1,3 +1,8 @@
+/*
+  TODO: Consider adding initial event markers as a part of the
+        initial state of the map.
+*/
+
 const initialState = {
   // Student Union.
   initialRegion: {
