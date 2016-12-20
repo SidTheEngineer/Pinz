@@ -38,7 +38,11 @@ class Map extends Component {
           pitchEnabled={false}
           showsCompass={false}
           loadingEnabled
+<<<<<<< HEAD
           onRegionChange={this.handleZoomRestriction}
+=======
+          onRegionChange={this.handleZoomRestriction()}
+>>>>>>> 9c8baa72135442c33d49c46317acadfb0c73abca
         />
       </ViewContainer>
     );
