@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, StyleSheet, StatusBar } from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, StatusBar } from 'react-native';
 import MapView from 'react-native-maps';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -11,20 +11,39 @@ const styles = StyleSheet.create({
   }
 });
 
-const Map = props => (
-  <ViewContainer>
-    <StatusBar
-      hidden
-    />
-    <MapView
-      region={props.map.initialRegion}
-      style={styles.map}
-      provider="google"
-      scrollEnabled={false}
-      zoomEnabled={false}
-    />
-  </ViewContainer>
-);
+class Map extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.handleZoomRestriction = this.handleZoomRestriction.bind(this);
+  }
+
+  handleZoomRestriction() {
+    console.log(this);
+  }
+
+  render() {
+    return (
+      <ViewContainer>
+        <StatusBar
+          hidden
+        />
+        <MapView
+          region={this.props.map.initialRegion}
+          style={styles.map}
+          provider="google"
+          scrollEnabled={false}
+          rotateEnabled={false}
+          pitchEnabled={false}
+          showsCompass={false}
+          loadingEnabled
+          onRegionChange={this.handleZoomRestriction}
+        />
+      </ViewContainer>
+    );
+  }
+}
 
 Map.propTypes = {
   map: React.PropTypes.objectOf(React.PropTypes.object),

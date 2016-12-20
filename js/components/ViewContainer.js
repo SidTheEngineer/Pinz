@@ -1,12 +1,11 @@
 import React from 'react';
-import { View, StyleSheet, Platform } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   viewContainer: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'stretch',
-    //top: Platform.OS === 'ios' ? 20 : 0
   }
 });
 

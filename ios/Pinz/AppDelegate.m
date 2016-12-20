@@ -19,7 +19,8 @@
 {
   NSURL *jsCodeLocation;
 
-  [GMSServices provideAPIKey:@"AIzaSyB2K6XC6RxNu8ox0u11L0CUhGLr_UEbWVY"];
+  // Google Maps support.
+  [GMSServices provideAPIKey:@"AIzaSyAP0PWROI4OfbVPpRWH7Jb-PMv6-lcN7SQ"];
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 
