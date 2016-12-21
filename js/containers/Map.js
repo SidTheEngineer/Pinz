@@ -6,15 +6,20 @@ import { connect } from 'react-redux';
 import ViewContainer from '../components/ViewContainer';
 
 const styles = StyleSheet.create({
+  container: {
+    bottom: 200
+  },
   map: {
     ...StyleSheet.absoluteFillObject
   },
   textBlock: {
-    height: 300
   }
 });
 
+const TOP_BOUNDS = 28.606;
 const RIGHT_BOUNDS = -81.197;
+const LEFT_BOUNDS = -81.205;
+const BOTTOM_BOUNDS = 28.594;
 const MIN_ZOOM = 0.025;
 
 class Map extends Component {
@@ -23,6 +28,12 @@ class Map extends Component {
     if (region.latitudeDelta >= MIN_ZOOM) {
       return false;
     } else if (region.longitude >= RIGHT_BOUNDS) {
+      return false;
+    } else if (region.latitude >= TOP_BOUNDS) {
+      return false;
+    } else if (region.longitude <= LEFT_BOUNDS) {
+      return false;
+    } else if (region.latitude <= BOTTOM_BOUNDS) {
       return false;
     }
 
@@ -64,7 +75,7 @@ class Map extends Component {
           region={this.state.region}
           style={styles.map}
           provider="google"
-          // scrollEnabled={false}
+          scrollEnabled
           rotateEnabled={false}
           pitchEnabled={false}
           showsCompass={false}
