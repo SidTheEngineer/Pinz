@@ -8,7 +8,7 @@ const initialState = {
   initialRegion: {
     latitude: 28.601660,
     longitude: -81.200788,
-    latitudeDelta: 0.014,
+    latitudeDelta: 0.0206,
     longitudeDelta: 0.014
   }
 };
