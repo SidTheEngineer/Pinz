@@ -4,7 +4,8 @@ import { View, StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   viewContainer: {
     flex: 1,
-    flexDirection: 'row',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
     alignItems: 'stretch',
   }
 });
@@ -18,7 +19,10 @@ const ViewContainer = ({ children }) => (
 );
 
 ViewContainer.propTypes = {
-  children: React.PropTypes.arrayOf(React.PropTypes.element)
+  children: React.PropTypes.oneOfType([
+    React.PropTypes.arrayOf(React.PropTypes.element),
+    React.PropTypes.element
+  ])
 };
 
 

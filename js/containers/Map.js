@@ -1,19 +1,13 @@
 import React, { Component } from 'react';
-import { StyleSheet, StatusBar, View, Text } from 'react-native';
+import { StyleSheet, StatusBar, Text } from 'react-native';
 import MapView from 'react-native-maps';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import ViewContainer from '../components/ViewContainer';
 
 const styles = StyleSheet.create({
-  container: {
-    bottom: 200
-  },
-  map: {
-    ...StyleSheet.absoluteFillObject
-  },
-  textBlock: {
-  }
+  map: { flex: 9 },
+  coordinates: { flex: 1 }
 });
 
 const TOP_BOUNDS = 28.606;
@@ -36,7 +30,6 @@ class Map extends Component {
     } else if (region.latitude <= BOTTOM_BOUNDS) {
       return false;
     }
-
     return true;
   }
 
@@ -75,21 +68,18 @@ class Map extends Component {
           region={this.state.region}
           style={styles.map}
           provider="google"
-          scrollEnabled
           rotateEnabled={false}
           pitchEnabled={false}
           showsCompass={false}
           loadingEnabled
           onRegionChange={this.onRegionChange}
         />
-        <View style={styles.textBlock}>
-          <Text>
-            Latitude: {this.state.region.latitude}{'\n'}
-            Longitude: {this.state.region.longitude}{'\n'}
-            Latitude Delta: {this.state.region.latitudeDelta}{'\n'}
-            Longitude Delta: {this.state.region.longitudeDelta}{'\n'}
-          </Text>
-        </View>
+        <Text style={styles.coordinates}>
+          Latitude: {this.state.region.latitude}{'\n'}
+          Longitude: {this.state.region.longitude}{'\n'}
+          Latitude Delta: {this.state.region.latitudeDelta}{'\n'}
+          Longitude Delta: {this.state.region.longitudeDelta}{'\n'}
+        </Text>
       </ViewContainer>
     );
   }
