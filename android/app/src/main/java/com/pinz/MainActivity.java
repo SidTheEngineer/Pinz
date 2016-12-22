@@ -1,9 +1,9 @@
 package com.pinz;
 
 import com.facebook.react.ReactActivity;
+import com.airbnb.android.react.maps.MapsPackage;
 <<<<<<< HEAD
 =======
-import com.airbnb.android.react.maps.MapsPackage;
 import com.airbnb.android.react.maps.MapsPackage;
 >>>>>>> 9c8baa72135442c33d49c46317acadfb0c73abca
 
