@@ -57,7 +57,6 @@ class Map extends Component {
   }
 
   render() {
-    console.log(this);
     return (
       <ViewContainer>
         <StatusBar
@@ -73,12 +72,12 @@ class Map extends Component {
           loadingEnabled
           onRegionChange={this.onRegionChange}
         />
-        <Text style={styles.coordinates}>
+        {/* <Text style={styles.coordinates}>
           Latitude: {this.state.region.latitude}{'\n'}
           Longitude: {this.state.region.longitude}{'\n'}
           Latitude Delta: {this.state.region.latitudeDelta}{'\n'}
           Longitude Delta: {this.state.region.longitudeDelta}{'\n'}
-        </Text>
+        </Text> */}
       </ViewContainer>
     );
   }
