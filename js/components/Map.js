@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { StyleSheet, StatusBar, Text } from 'react-native';
 import MapView from 'react-native-maps';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
 import ViewContainer from '../components/ViewContainer';
 
 const styles = StyleSheet.create({
-  map: { flex: 9 },
+  map: { flex: 5 },
   coordinates: { flex: 1 }
 });
 
@@ -59,6 +57,7 @@ class Map extends Component {
   }
 
   render() {
+    console.log(this);
     return (
       <ViewContainer>
         <StatusBar
@@ -95,11 +94,4 @@ Map.propTypes = {
   })
 };
 
-const mapStateToProps = state => state;
-
-// TODO: Bind future action creators here.
-const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators({}, dispatch)
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(Map);
+export default Map;
