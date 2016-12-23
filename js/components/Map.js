@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, StatusBar, Text } from 'react-native';
+import { StyleSheet, StatusBar } from 'react-native';
 import MapView from 'react-native-maps';
 import ViewContainer from '../components/ViewContainer';
 
