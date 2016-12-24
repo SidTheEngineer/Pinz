@@ -8,7 +8,7 @@ import Map from '../components/Map';
 
 const Root = props => (
   <ScrollableTabView tabBarPosition="bottom" renderTabBar={() => <IconBar />}>
-    <Map tabLabel="map" />
+    <Map tabLabel="map" {...props} />
     <Text tabLabel="list">list</Text>
   </ScrollableTabView>
 );
