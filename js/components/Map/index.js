@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, StatusBar } from 'react-native';
 import MapView from 'react-native-maps';
-import ViewContainer from '../components/ViewContainer';
+import ViewContainer from '../ViewContainer';
 
 const styles = StyleSheet.create({
   map: { flex: 5 },

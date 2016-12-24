@@ -2,14 +2,18 @@ import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
-import { Text } from 'react-native';
 import TabBar from '../components/TabBar';
 import Map from '../components/Map';
+import PostList from '../components/PostList';
 
 const Root = props => (
-  <ScrollableTabView tabBarPosition="bottom" renderTabBar={() => <TabBar />}>
+  <ScrollableTabView
+    tabBarPosition="bottom"
+    renderTabBar={() => <TabBar />}
+    locked
+  >
     <Map tabLabel="map" {...props} />
-    <Text tabLabel="list">list</Text>
+    <PostList tabLabel="list" />
   </ScrollableTabView>
 );
 
