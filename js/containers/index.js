@@ -3,11 +3,11 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 import { Text } from 'react-native';
-import IconBar from '../components/IconBar';
+import TabBar from '../components/TabBar';
 import Map from '../components/Map';
 
 const Root = props => (
-  <ScrollableTabView tabBarPosition="bottom" renderTabBar={() => <IconBar />}>
+  <ScrollableTabView tabBarPosition="bottom" renderTabBar={() => <TabBar />}>
     <Map tabLabel="map" {...props} />
     <Text tabLabel="list">list</Text>
   </ScrollableTabView>

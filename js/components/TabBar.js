@@ -1,31 +1,33 @@
 import React from 'react';
-import { StyleSheet } from 'react-native';
-import ScrollableTabView, { DefaultTabBar } from 'react-native-scrollable-tab-view';
-import Posts from '../components/Posts';
-import Map from './Map';
+import { View, StyleSheet } from 'react-native';
+import Tab from './Tab';
 
 const styles = StyleSheet.create({
-  textStyle: {
-    fontSize: 16,
-    color: 'white'
-  },
-
-  underlineStyle: {
-    backgroundColor: 'white'
+  tabContainer: {
+    height: 45,
+    flexDirection: 'row',
   }
 });
 
 const TabBar = props => (
-  <ScrollableTabView
-    renderTabBar={() => <DefaultTabBar />}
-    tabBarPosition="bottom"
-    tabBarBackgroundColor={'#05006d'}
-    tabBarTextStyle={styles.textStyle}
-    tabBarUnderlineStyle={styles.underlineStyle}
-  >
-    <Map {...props} tabLabel="Map" />
-    <Posts tabLabel="Posts" />
-  </ScrollableTabView>
+  // Props here are coming from the ScrollableTabView component.
+  <View style={styles.tabContainer}>
+    {props.tabs.map((tab, index) => (
+      <Tab
+        {...props}
+        index={index}
+        tab={tab}
+        key={tab}
+      />
+    ))}
+  </View>
 );
+
+TabBar.propTypes = {
+  tabs: React.PropTypes.oneOfType([
+    React.PropTypes.arrayOf(React.PropTypes.string),
+    React.PropTypes.string
+  ])
+};
 
 export default TabBar;
