@@ -12,7 +12,7 @@ const mapStateToProps = state => state;
 
 // TODO: Bind future action creators here.
 const mapDispatchToProps = dispatch => ({
-  actions: bindActionCreators({}, dispatch)
+  mapActions: bindActionCreators({}, dispatch)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Root);

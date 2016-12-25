@@ -2,31 +2,25 @@ import React, { Component } from 'react';
 import { StyleSheet, StatusBar } from 'react-native';
 import MapView from 'react-native-maps';
 import ViewContainer from '../ViewContainer';
+import MAP from '../../constant';
 
 const styles = StyleSheet.create({
   map: { flex: 5 },
   coordinates: { flex: 1 }
 });
 
-// Around UCF.
-const TOP_BOUNDS = 28.606;
-const RIGHT_BOUNDS = -81.197;
-const LEFT_BOUNDS = -81.205;
-const BOTTOM_BOUNDS = 28.594;
-const MIN_ZOOM = 0.025;
-
 class Map extends Component {
 
   static isInBounds(region) {
-    if (region.latitudeDelta >= MIN_ZOOM) {
+    if (region.latitudeDelta >= MAP.BOUNDS.MIN_ZOOM) {
       return false;
-    } else if (region.longitude >= RIGHT_BOUNDS) {
+    } else if (region.longitude >= MAP.BOUNDS.RIGHT_BOUNDS) {
       return false;
-    } else if (region.latitude >= TOP_BOUNDS) {
+    } else if (region.latitude >= MAP.BOUNDS.TOP_BOUNDS) {
       return false;
-    } else if (region.longitude <= LEFT_BOUNDS) {
+    } else if (region.longitude <= MAP.BOUNDS.LEFT_BOUNDS) {
       return false;
-    } else if (region.latitude <= BOTTOM_BOUNDS) {
+    } else if (region.latitude <= MAP.BOUNDS.BOTTOM_BOUNDS) {
       return false;
     }
     return true;
@@ -34,6 +28,10 @@ class Map extends Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {
+      region: MAP.INITIAL_REGION
+    };
 
     this.onRegionChange = this.onRegionChange.bind(this);
   }
@@ -43,20 +41,19 @@ class Map extends Component {
 
     if (!Map.isInBounds(region)) {
       this.setState({
-        region: this.props.map.initialRegion
+        region: MAP.INITIAL_REGION
       });
     }
   }
 
   render() {
-    console.log(this);
     return (
       <ViewContainer>
         <StatusBar
           hidden
         />
         <MapView
-          region={this.props.map.initialRegion}
+          region={this.state.region}
           style={styles.map}
           provider="google"
           rotateEnabled={false}

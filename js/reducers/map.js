@@ -3,17 +3,9 @@
         initial state of the map.
 */
 
-const initialState = {
-  // Student Union.
-  initialRegion: {
-    latitude: 28.601660,
-    longitude: -81.200788,
-    latitudeDelta: 0.0206,
-    longitudeDelta: 0.014
-  }
-};
+import MAP from '../constant';
 
-const map = (state = initialState, action) => {
+const map = (state = MAP, action) => {
   switch (action.type) {
     default:
       return state;

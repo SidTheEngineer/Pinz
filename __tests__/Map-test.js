@@ -2,17 +2,9 @@ import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Map from '../js/components/Map';
+import MAP from '../js/constant';
 
 jest.mock('react-native-maps', () => 'MapView');
-
-const mapProps = {
-  initialRegion: {
-    latitude: 28.601660,
-    longitude: -81.200788,
-    latitudeDelta: 0.0206,
-    longitudeDelta: 0.014
-  }
-};
 
 expect.extend({
   // Takes in an area where the map would consider out of bounds.
@@ -34,25 +26,25 @@ expect.extend({
 describe('Map', () => {
   it('renders correctly', () => {
     const map = renderer.create(
-      <Map map={mapProps} />
+      <Map map={MAP} />
     ).toJSON();
     expect(map).toMatchSnapshot();
   });
 
   it('checks for out of bounds', () => {
     // Min zoom check.
-    expect({ latitudeDelta: 0.026 }).toBeOutOfBounds(mapProps.initialRegion);
+    expect({ latitudeDelta: 0.026 }).toBeOutOfBounds(MAP.INITIAL_REGION);
 
     // Right bounds check.
-    expect({ longitude: -81 }).toBeOutOfBounds(mapProps.initialRegion);
+    expect({ longitude: -81 }).toBeOutOfBounds(MAP.INITIAL_REGION);
 
     // Top bounds check.
-    expect({ latitude: 28.7 }).toBeOutOfBounds(mapProps.initialRegion);
+    expect({ latitude: 28.7 }).toBeOutOfBounds(MAP.INITIAL_REGION);
 
     // Left bounds check.
-    expect({ longitude: -81 }).toBeOutOfBounds(mapProps.initialRegion);
+    expect({ longitude: -81 }).toBeOutOfBounds(MAP.INITIAL_REGION);
 
     // Bottom bounds check.
-    expect({ latitude: 28 }).toBeOutOfBounds(mapProps.initialRegion);
+    expect({ latitude: 28 }).toBeOutOfBounds(MAP.INITIAL_REGION);
   });
 });
