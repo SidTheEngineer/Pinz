@@ -49,6 +49,7 @@ class Map extends Component {
   }
 
   render() {
+    console.log(this);
     return (
       <ViewContainer>
         <StatusBar

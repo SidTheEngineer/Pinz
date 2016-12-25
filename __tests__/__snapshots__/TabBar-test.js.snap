@@ -1,0 +1,199 @@
+exports[`TabBar renders correctly 1`] = `
+<ScrollableTabView
+  locked={true}
+  renderTabBar={[Function]}
+  tabBarPosition="bottom">
+  <View
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+      }
+    }>
+    <MapView
+      loadingEnabled={true}
+      onRegionChange={[Function]}
+      pitchEnabled={false}
+      provider="google"
+      region={
+        Object {
+          "latitude": 28.60166,
+          "latitudeDelta": 0.0206,
+          "longitude": -81.200788,
+          "longitudeDelta": 0.014,
+        }
+      }
+      rotateEnabled={false}
+      showsCompass={false}
+      style={
+        Object {
+          "flex": 5,
+        }
+      } />
+  </View>
+  <ScrollView
+    style={
+      Object {
+        "flex": 1,
+      }
+    }>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "borderBottomWidth": 0.5,
+          "borderColor": "rgb(150,150,150)",
+          "borderStyle": "solid",
+          "borderTopWidth": 0.5,
+          "flexDirection": "row",
+          "height": 60,
+        }
+      }>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "mistyrose",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "margin": 5,
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail">
+          TEST
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "borderBottomWidth": 0.5,
+          "borderColor": "rgb(150,150,150)",
+          "borderStyle": "solid",
+          "borderTopWidth": 0.5,
+          "flexDirection": "row",
+          "height": 60,
+        }
+      }>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "mistyrose",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "margin": 5,
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail">
+          TEST
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "borderBottomWidth": 0.5,
+          "borderColor": "rgb(150,150,150)",
+          "borderStyle": "solid",
+          "borderTopWidth": 0.5,
+          "flexDirection": "row",
+          "height": 60,
+        }
+      }>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "mistyrose",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "margin": 5,
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail">
+          TEST
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "borderBottomWidth": 0.5,
+          "borderColor": "rgb(150,150,150)",
+          "borderStyle": "solid",
+          "borderTopWidth": 0.5,
+          "flexDirection": "row",
+          "height": 60,
+        }
+      }>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "mistyrose",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "margin": 5,
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail">
+          TEST
+        </Text>
+      </View>
+    </TouchableOpacity>
+    <TouchableOpacity
+      activeOpacity={0.2}
+      style={
+        Object {
+          "borderBottomWidth": 0.5,
+          "borderColor": "rgb(150,150,150)",
+          "borderStyle": "solid",
+          "borderTopWidth": 0.5,
+          "flexDirection": "row",
+          "height": 60,
+        }
+      }>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "mistyrose",
+            "flex": 1,
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "margin": 5,
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail">
+          TEST
+        </Text>
+      </View>
+    </TouchableOpacity>
+  </ScrollView>
+</ScrollableTabView>
+`;
