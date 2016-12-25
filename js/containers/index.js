@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 import TabBar from '../components/TabBar';
 import Map from '../components/Map';
-import PostList from '../components/PostList';
+// import PostList from '../components/PostList';
+import CategoryList from '../components/CategoryList';
 
 const Root = props => (
   <ScrollableTabView
@@ -13,7 +14,7 @@ const Root = props => (
     locked
   >
     <Map tabLabel="map" {...props} />
-    <PostList tabLabel="list" />
+    <CategoryList tabLabel="list" />
   </ScrollableTabView>
 );
 

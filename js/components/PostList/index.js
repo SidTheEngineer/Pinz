@@ -15,7 +15,23 @@ class PostList extends Component {
 
     const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     this.state = {
-      dataSource: ds.cloneWithRows([<Post />, <Post />, <Post />, <Post />, <Post />, <Post />, <Post />, <Post />, <Post />, <Post />, <Post />, <Post />, <Post />, <Post />, <Post />])
+      dataSource: ds.cloneWithRows([
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />
+      ])
     };
   }
 
