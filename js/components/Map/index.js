@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
   coordinates: { flex: 1 }
 });
 
+// Around UCF.
 const TOP_BOUNDS = 28.606;
 const RIGHT_BOUNDS = -81.197;
 const LEFT_BOUNDS = -81.205;
@@ -34,15 +35,6 @@ class Map extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      region: {
-        latitude: 28.601660,
-        longitude: -81.200788,
-        latitudeDelta: 0.014,
-        longitudeDelta: 0.014
-      }
-    };
-
     this.onRegionChange = this.onRegionChange.bind(this);
   }
 
@@ -63,7 +55,7 @@ class Map extends Component {
           hidden
         />
         <MapView
-          region={this.state.region}
+          region={this.props.map.initialRegion}
           style={styles.map}
           provider="google"
           rotateEnabled={false}

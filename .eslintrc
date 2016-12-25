@@ -7,5 +7,8 @@
 
     // Remove .jsx filename for JSX restriction.
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }]
+  },
+  "env": {
+    "jest": true
   }
 }
