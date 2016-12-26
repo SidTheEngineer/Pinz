@@ -4,7 +4,7 @@ import {
   ScrollView,
   StyleSheet,
   View,
-  TouchableOpacity
+  TouchableOpacity,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -34,7 +34,7 @@ const Category = () => (
   <TouchableOpacity style={styles.categoryContainer}>
     <View style={styles.textContainer}>
       <Text>TEST</Text>
-      <Icon name="arrow-right" size={30} style={{ marginRight: 10 }} />
+      <Icon name="arrow-right" size={20} style={{ marginRight: 15 }} />
     </View>
   </TouchableOpacity>
 );

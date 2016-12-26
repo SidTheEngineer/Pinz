@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import React, { Component } from 'react';
+import { View, StyleSheet, Navigator } from 'react-native';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 import Tab from './Tab';
 import Map from '../Map';
@@ -26,16 +26,37 @@ const CustomTabBar = props => (
   </View>
 );
 
-const TabBar = props => (
-  <ScrollableTabView
-    tabBarPosition="bottom"
-    renderTabBar={() => <CustomTabBar />}
-    locked
-  >
-    <Map tabLabel="map" {...props} />
-    <CategoryList tabLabel="list" />
-  </ScrollableTabView>
-);
+class TabBar extends Component {
+
+  static renderScene(route, navigator) {
+    switch (route.title) {
+      default:
+        return <CategoryList navigator={navigator} />;
+    }
+  }
+
+  render() {
+    const routes = [
+      { title: 'Category List', index: 0 }
+    ];
+
+
+    return (
+      <ScrollableTabView
+        tabBarPosition="bottom"
+        renderTabBar={() => <CustomTabBar />}
+        locked
+      >
+        <Map tabLabel="map" {...this.props} />
+        <Navigator
+          initialRoute={routes[0]}
+          renderScene={TabBar.renderScene}
+          tabLabel="list"
+        />
+      </ScrollableTabView>
+    );
+  }
+}
 
 CustomTabBar.propTypes = {
   tabs: React.PropTypes.oneOfType([
