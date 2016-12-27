@@ -1,32 +1,11 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Navigator } from 'react-native';
+import { Navigator } from 'react-native';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 
-import Tab from './Tab';
+import CustomTabBar from './CustomTabBar';
 import Map from '../Map';
 import CategoryList from '../CategoryList';
 import PostList from '../PostList';
-
-const styles = StyleSheet.create({
-  tabContainer: {
-    height: 45,
-    flexDirection: 'row',
-  }
-});
-
-const CustomTabBar = props => (
-  // Props here are coming from the ScrollableTabView component.
-  <View style={styles.tabContainer}>
-    {props.tabs.map((tab, index) => (
-      <Tab
-        {...props}
-        index={index}
-        tab={tab}
-        key={tab}
-      />
-    ))}
-  </View>
-);
 
 class TabBar extends Component {
 
@@ -65,12 +44,5 @@ class TabBar extends Component {
     );
   }
 }
-
-CustomTabBar.propTypes = {
-  tabs: React.PropTypes.oneOfType([
-    React.PropTypes.arrayOf(React.PropTypes.string),
-    React.PropTypes.string
-  ])
-};
 
 export default TabBar;

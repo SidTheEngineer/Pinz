@@ -1,4 +1,5 @@
 const MAP = {
+  // UCF.
   INITIAL_REGION: {
     latitude: 28.601660,
     longitude: -81.200788,
