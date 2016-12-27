@@ -5,6 +5,7 @@ import {
   StyleSheet,
   View,
   TouchableOpacity,
+  BackAndroid
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
@@ -40,6 +41,7 @@ const Category = props => (
 );
 
 class CategoryList extends Component {
+
   constructor() {
     super();
 
@@ -53,6 +55,14 @@ class CategoryList extends Component {
   }
 
   render() {
+    BackAndroid.addEventListener('hardwareBackPress', () => {
+      if (this.props.navigator.getCurrentRoutes().length > 1) {
+        this.props.navigator.pop();
+        return true;
+      }
+      return false;
+    });
+
     return (
       <ScrollView style={styles.categoryListContainer}>
         <Category navigate={() => this.navigate('Events')} />
@@ -71,8 +81,10 @@ Category.propTypes = {
 
 CategoryList.propTypes = {
   navigator: React.PropTypes.shape({
-    push: React.PropTypes.func.isRequired
-  })
+    push: React.PropTypes.func.isRequired,
+    pop: React.PropTypes.func.isRequired,
+    getCurrentRoutes: React.PropTypes.func.isRequired
+  }),
 };
 
 export default CategoryList;
