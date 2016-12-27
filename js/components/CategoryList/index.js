@@ -75,14 +75,4 @@ CategoryList.propTypes = {
   })
 };
 
-// const CategoryList = props => (
-//   <ScrollView style={styles.categoryListContainer}>
-//     <Category onPress={this.navigate('Events')}/>
-//     <Category />
-//     <Category />
-//     <Category />
-//     <Category />
-//   </ScrollView>
-// );
-
 export default CategoryList;
