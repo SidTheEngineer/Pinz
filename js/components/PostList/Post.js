@@ -45,7 +45,7 @@ const UpvoteDownvote = () => (
 const Post = () => (
   <TouchableOpacity style={styles.postContainer}>
     <UpvoteDownvote />
-    <Text>TEST</Text>
+    <Text style={{ padding: 5 }}>TEST</Text>
   </TouchableOpacity>
 );
 

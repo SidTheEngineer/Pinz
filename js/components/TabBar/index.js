@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, Navigator } from 'react-native';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
+
 import Tab from './Tab';
 import Map from '../Map';
 import CategoryList from '../CategoryList';
+import PostList from '../PostList';
 
 const styles = StyleSheet.create({
   tabContainer: {
@@ -30,6 +32,10 @@ class TabBar extends Component {
 
   static renderScene(route, navigator) {
     switch (route.title) {
+
+      case 'Events':
+        return <PostList navigator={navigator} />;
+
       default:
         return <CategoryList navigator={navigator} />;
     }
@@ -37,7 +43,8 @@ class TabBar extends Component {
 
   render() {
     const routes = [
-      { title: 'Category List', index: 0 }
+      { title: 'Category List', index: 0 },
+      { title: 'Events', index: 1 }
     ];
 
 
@@ -51,6 +58,7 @@ class TabBar extends Component {
         <Navigator
           initialRoute={routes[0]}
           renderScene={TabBar.renderScene}
+          configureScene={() => Navigator.SceneConfigs.PushFromRight}
           tabLabel="list"
         />
       </ScrollableTabView>

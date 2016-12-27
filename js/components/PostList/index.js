@@ -5,7 +5,8 @@ import Post from './Post';
 const styles = StyleSheet.create({
   listContainer: {
     flex: 1,
-    flexDirection: 'column'
+    flexDirection: 'column',
+    backgroundColor: 'rgb(235,235,235)'
   }
 });
 
@@ -30,7 +31,19 @@ class PostList extends Component {
         <Post />,
         <Post />,
         <Post />,
-        <Post />
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+        <Post />,
+
       ])
     };
   }
@@ -41,6 +54,11 @@ class PostList extends Component {
         dataSource={this.state.dataSource}
         renderRow={rowData => rowData}
         style={styles.listContainer}
+
+        // Ratio of initial render to how many rendered
+        // per frame.
+        initialListSize={30}
+        pageSize={4}
       />
     );
   }

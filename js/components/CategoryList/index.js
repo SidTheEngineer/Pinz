@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Text,
   ScrollView,
@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
   }
 });
 
-const Category = () => (
-  <TouchableOpacity style={styles.categoryContainer}>
+const Category = props => (
+  <TouchableOpacity style={styles.categoryContainer} onPress={props.navigate}>
     <View style={styles.textContainer}>
       <Text>TEST</Text>
       <Icon name="arrow-right" size={20} style={{ marginRight: 15 }} />
@@ -39,14 +39,50 @@ const Category = () => (
   </TouchableOpacity>
 );
 
-const CategoryList = () => (
-  <ScrollView style={styles.categoryListContainer}>
-    <Category />
-    <Category />
-    <Category />
-    <Category />
-    <Category />
-  </ScrollView>
-);
+class CategoryList extends Component {
+  constructor() {
+    super();
+
+    this.navigate = this.navigate.bind(this);
+  }
+
+  navigate(title) {
+    this.props.navigator.push({
+      title
+    });
+  }
+
+  render() {
+    return (
+      <ScrollView style={styles.categoryListContainer}>
+        <Category navigate={() => this.navigate('Events')} />
+        <Category />
+        <Category />
+        <Category />
+        <Category />
+      </ScrollView>
+    );
+  }
+}
+
+Category.propTypes = {
+  navigate: React.PropTypes.func
+};
+
+CategoryList.propTypes = {
+  navigator: React.PropTypes.shape({
+    push: React.PropTypes.func.isRequired
+  })
+};
+
+// const CategoryList = props => (
+//   <ScrollView style={styles.categoryListContainer}>
+//     <Category onPress={this.navigate('Events')}/>
+//     <Category />
+//     <Category />
+//     <Category />
+//     <Category />
+//   </ScrollView>
+// );
 
 export default CategoryList;
