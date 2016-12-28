@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
   categoryContainer: {
     height: 75,
     flexDirection: 'row',
-    borderColor: 'rgb(150,150,150)',
-    borderStyle: 'solid',
-    borderTopWidth: 0.5,
-    borderBottomWidth: 0.5,
+    // borderColor: 'rgb(150,150,150)',
+    // borderStyle: 'solid',
+    // borderTopWidth: 0.5,
+    // borderBottomWidth: 0.5,
   },
   textContainer: {
     flex: 1,

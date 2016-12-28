@@ -3,6 +3,7 @@ import { Navigator } from 'react-native';
 import ScrollableTabView from 'react-native-scrollable-tab-view';
 
 import CustomTabBar from './CustomTabBar';
+import NavigationBar from '../NavigationBar';
 import Map from '../Map';
 import CategoryList from '../CategoryList';
 import PostList from '../PostList';
@@ -35,6 +36,7 @@ class TabBar extends Component {
       >
         <Map tabLabel="map" {...this.props} />
         <Navigator
+          navigationBar={NavigationBar}
           initialRoute={routes[0]}
           renderScene={TabBar.renderScene}
           configureScene={() => Navigator.SceneConfigs.PushFromRight}

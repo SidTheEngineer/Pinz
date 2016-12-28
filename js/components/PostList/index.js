@@ -6,7 +6,8 @@ const styles = StyleSheet.create({
   listContainer: {
     flex: 1,
     flexDirection: 'column',
-    backgroundColor: 'rgb(235,235,235)'
+    backgroundColor: 'rgb(235,235,235)',
+    marginTop: 54
   }
 });
 

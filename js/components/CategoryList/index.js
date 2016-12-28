@@ -10,7 +10,8 @@ import Category from './Category';
 const styles = StyleSheet.create({
   categoryListContainer: {
     flex: 1,
-    backgroundColor: 'rgb(235,235,235)'
+    backgroundColor: 'rgb(235,235,235)',
+    marginTop: 54
   }
 });
 
