@@ -1,22 +1,12 @@
 import React from 'react';
 import {
+  View,
   TouchableOpacity,
-  StyleSheet,
-  Text,
-  View
+  StyleSheet
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const styles = StyleSheet.create({
-  postContainer: {
-    height: 85,
-    flexDirection: 'row',
-    alignItems: 'stretch',
-    borderColor: 'rgb(150,150,150)',
-    borderStyle: 'solid',
-    borderTopWidth: 0.5,
-    borderBottomWidth: 0.5,
-  },
   upvoteDownvoteContainer: {
     flexDirection: 'column',
     width: 55,
@@ -42,11 +32,4 @@ const UpvoteDownvote = () => (
   </View>
 );
 
-const Post = () => (
-  <TouchableOpacity style={styles.postContainer}>
-    <UpvoteDownvote />
-    <Text style={{ padding: 5 }}>TEST</Text>
-  </TouchableOpacity>
-);
-
-export default Post;
+export default UpvoteDownvote;
