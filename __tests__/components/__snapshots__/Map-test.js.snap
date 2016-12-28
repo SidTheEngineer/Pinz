@@ -1,12 +1,15 @@
 exports[`Map renders correctly 1`] = `
 <View
   style={
-    Object {
-      "alignItems": "stretch",
-      "flex": 1,
-      "flexDirection": "column",
-      "justifyContent": "flex-start",
-    }
+    Array [
+      Object {
+        "alignItems": "stretch",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "flex-start",
+      },
+      Object {},
+    ]
   }>
   <MapView
     loadingEnabled={true}

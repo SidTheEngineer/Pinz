@@ -1,0 +1,3307 @@
+exports[`PostList renders correctly 1`] = `
+<ScrollView
+  dataSource={
+    ListViewDataSource {
+      "items": 26,
+    }
+  }
+  initialListSize={30}
+  onContentSizeChange={[Function]}
+  onEndReachedThreshold={1000}
+  onKeyboardDidHide={undefined}
+  onKeyboardDidShow={undefined}
+  onKeyboardWillHide={undefined}
+  onKeyboardWillShow={undefined}
+  onLayout={[Function]}
+  onScroll={[Function]}
+  pageSize={4}
+  removeClippedSubviews={true}
+  renderRow={[Function]}
+  scrollEventThrottle={50}
+  scrollRenderAheadDistance={1000}
+  stickyHeaderIndices={Array []}
+  style={
+    Object {
+      "backgroundColor": "rgb(235,235,235)",
+      "flex": 1,
+      "flexDirection": "column",
+    }
+  }>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    style={
+      Object {
+        "alignItems": "stretch",
+        "flexDirection": "row",
+        "height": 85,
+        "marginRight": 5,
+        "marginTop": 15,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "width": 45,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(51, 204, 94)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+          }
+        }>
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 20,
+              },
+              Object {
+                "color": "rgb(219, 54, 65)",
+              },
+              Object {
+                "fontFamily": "FontAwesome",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }>
+          
+        </Text>
+      </TouchableOpacity>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "stretch",
+            "flex": 1,
+            "flexDirection": "column",
+            "justifyContent": "flex-start",
+          },
+          Object {},
+        ]
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "fontSize": 12,
+              "padding": 2,
+            },
+            Object {
+              "fontWeight": "bold",
+            },
+          ]
+        }>
+        The standard Lorem Ipsum passage, used since the 1500s
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 12,
+            "padding": 2,
+          }
+        }>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </Text>
+    </View>
+  </TouchableOpacity>
+</ScrollView>
+`;

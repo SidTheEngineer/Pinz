@@ -1,8 +1,8 @@
 import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import TabBar from '../js/components/TabBar';
-import MAP from '../js/constant';
+import TabBar from '../../js/components/TabBar';
+import MAP from '../../js/constant';
 
 // The TabBar is responsible for returning a MapView, so
 // react-native-maps is needed, as well as initial props.

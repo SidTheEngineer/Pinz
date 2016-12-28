@@ -5,12 +5,15 @@ exports[`TabBar renders correctly 1`] = `
   tabBarPosition="bottom">
   <View
     style={
-      Object {
-        "alignItems": "stretch",
-        "flex": 1,
-        "flexDirection": "column",
-        "justifyContent": "flex-start",
-      }
+      Array [
+        Object {
+          "alignItems": "stretch",
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "flex-start",
+        },
+        Object {},
+      ]
     }>
     <MapView
       loadingEnabled={true}
@@ -121,7 +124,7 @@ exports[`TabBar renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
-                TEST
+                Posts
               </Text>
               <Text
                 accessible={true}
@@ -174,7 +177,7 @@ exports[`TabBar renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
-                TEST
+                Events
               </Text>
               <Text
                 accessible={true}
@@ -227,7 +230,7 @@ exports[`TabBar renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
-                TEST
+                Garages
               </Text>
               <Text
                 accessible={true}
@@ -280,7 +283,7 @@ exports[`TabBar renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
-                TEST
+                Food
               </Text>
               <Text
                 accessible={true}
@@ -333,7 +336,7 @@ exports[`TabBar renders correctly 1`] = `
                 accessible={true}
                 allowFontScaling={true}
                 ellipsizeMode="tail">
-                TEST
+                Test
               </Text>
               <Text
                 accessible={true}

@@ -1,8 +1,8 @@
 import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Map from '../js/components/Map';
-import MAP from '../js/constant';
+import Map from '../../js/components/Map';
+import MAP from '../../js/constant';
 
 jest.mock('react-native-maps', () => 'MapView');
 
