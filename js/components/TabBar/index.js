@@ -12,7 +12,7 @@ class TabBar extends Component {
   static renderScene(route, navigator) {
     switch (route.title) {
 
-      case 'Events':
+      case 'Posts':
         return <PostList navigator={navigator} />;
 
       default:
@@ -23,7 +23,7 @@ class TabBar extends Component {
   render() {
     const routes = [
       { title: 'Category List', index: 0 },
-      { title: 'Events', index: 1 }
+      { title: 'Posts', index: 1 }
     ];
 
 

@@ -28,14 +28,15 @@ const styles = StyleSheet.create({
 const Category = props => (
   <TouchableOpacity style={styles.categoryContainer} onPress={props.navigate}>
     <View style={styles.textContainer}>
-      <Text>TEST</Text>
+      <Text>{ props.title }</Text>
       <Icon name="arrow-right" size={20} style={{ marginRight: 15 }} />
     </View>
   </TouchableOpacity>
 );
 
 Category.propTypes = {
-  navigate: React.PropTypes.func
+  navigate: React.PropTypes.func,
+  title: React.PropTypes.string.isRequired
 };
 
 export default Category;

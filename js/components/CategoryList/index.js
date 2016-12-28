@@ -29,9 +29,10 @@ class CategoryList extends Component {
   }
 
   render() {
+    const { navigator } = this.props;
     BackAndroid.addEventListener('hardwareBackPress', () => {
-      if (this.props.navigator.getCurrentRoutes().length > 1) {
-        this.props.navigator.pop();
+      if (navigator.getCurrentRoutes().length > 1) {
+        navigator.pop();
         return true;
       }
       return false;
@@ -39,11 +40,11 @@ class CategoryList extends Component {
 
     return (
       <ScrollView style={styles.categoryListContainer}>
-        <Category {...this.props} navigate={() => this.navigate('Events')} />
-        <Category {...this.props} />
-        <Category {...this.props} />
-        <Category {...this.props} />
-        <Category {...this.props} />
+        <Category {...this.props} title={'Posts'} navigate={() => this.navigate('Posts')} />
+        <Category {...this.props} title={'Events'} />
+        <Category {...this.props} title={'Garages'} />
+        <Category {...this.props} title={'Food'} />
+        <Category {...this.props} title={'Test'} />
       </ScrollView>
     );
   }

@@ -15,16 +15,14 @@ const styles = StyleSheet.create({
 
 const Tab = props => (
   <TouchableOpacity
-    style={
-      props.activeTab === props.index
-      ? [styles.tab, { backgroundColor: 'rgb(220,220,220)' }]
-      : styles.tab
-    }
+    style={styles.tab}
     onPress={() => props.goToPage(props.index)}
+    activeOpacity={1}
   >
     <Icon
       name={props.tab}
       size={20}
+      color={props.activeTab === props.index ? 'rgb(51, 204, 94)' : 'gray'}
     />
   </TouchableOpacity>
 );
