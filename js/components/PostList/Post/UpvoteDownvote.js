@@ -7,6 +7,8 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
+import { COLORS } from '../../../constant';
+
 const styles = StyleSheet.create({
   upvoteDownvoteContainer: {
     flexDirection: 'column',
@@ -20,8 +22,8 @@ const styles = StyleSheet.create({
     // borderStyle: 'solid',
     // borderRightWidth: 0.5,
   },
-  upArrow: { color: 'rgb(51, 204, 94)' },
-  downArrow: { color: 'rgb(219, 54, 65)' }
+  upArrow: { color: COLORS.LIGHT_GREEN },
+  downArrow: { color: COLORS.RED }
 });
 
 const UpvoteDownvote = () => (

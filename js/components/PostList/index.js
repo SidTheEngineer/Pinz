@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 import { StyleSheet, ListView } from 'react-native';
 import Post from './Post';
 
+import { COLORS } from '../../constant';
+
 const styles = StyleSheet.create({
   listContainer: {
     flex: 1,
     flexDirection: 'column',
-    backgroundColor: 'rgb(235,235,235)',
+    backgroundColor: COLORS.LIGHT_GRAY,
     marginTop: 54
   }
 });

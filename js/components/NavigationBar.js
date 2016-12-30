@@ -7,9 +7,11 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
+import { COLORS } from '../constant';
+
 const styles = StyleSheet.create({
   navigationBar: {
-    backgroundColor: 'rgb(51, 204, 94)'
+    backgroundColor: COLORS.LIGHT_GREEN
   },
   iconContainer: {
     flex: 1,
