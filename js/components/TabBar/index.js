@@ -23,7 +23,7 @@ class TabBar extends Component {
 
   render() {
     const routes = [
-      { title: 'Category List', index: 0 },
+      { title: 'Categories', index: 0 },
       { title: 'Posts', index: 1 }
     ];
 

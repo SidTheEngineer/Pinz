@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 const Category = props => (
   <TouchableOpacity style={styles.categoryContainer} onPress={props.navigate}>
     <View style={styles.textContainer}>
-      <Text>{ props.title }</Text>
+      <Text style={{ marginLeft: 15 }}>{ props.title }</Text>
       <Icon name="arrow-right" size={20} style={{ marginRight: 15 }} />
     </View>
   </TouchableOpacity>

@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import { StyleSheet, StatusBar } from 'react-native';
+import { View, StyleSheet, StatusBar, Platform } from 'react-native';
 import MapView from 'react-native-maps';
 import ViewContainer from '../ViewContainer';
-import MAP from '../../constant';
+import MAP, { COLORS } from '../../constant';
 
 const styles = StyleSheet.create({
   map: { flex: 5 },
-  coordinates: { flex: 1 }
+  coordinates: { flex: 1 },
+  statusBarContainer: {
+    height: Platform.OS === 'ios' ? 20 : 0,
+    backgroundColor: COLORS.LIGHT_GREEN
+  }
 });
 
 class Map extends Component {
@@ -49,9 +53,12 @@ class Map extends Component {
   render() {
     return (
       <ViewContainer>
-        <StatusBar
-          hidden
-        />
+        <View style={styles.statusBarContainer}>
+          <StatusBar
+            barStyle="light-content"
+            backgroundColor={COLORS.LIGHT_GREEN}
+          />
+        </View>
         <MapView
           region={this.state.region}
           style={styles.map}
