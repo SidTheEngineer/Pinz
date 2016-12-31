@@ -22,7 +22,8 @@ const MAP = {
 export const COLORS = {
   LIGHT_GRAY: 'rgb(235,235,235)',
   LIGHT_GREEN: 'rgb(51, 204, 94)',
-  RED: 'rgb(219, 54, 65)'
+  RED: 'rgb(219, 54, 65)',
+  GRAY: 'rgb(100,100,100)'
 };
 
 export default MAP;

@@ -12,7 +12,7 @@ import { COLORS } from '../../../constant';
 const styles = StyleSheet.create({
   upvoteDownvoteContainer: {
     flexDirection: 'column',
-    width: Platform.OS === 'ios' ? 45 : 55,
+    width: Platform.OS === 'ios' ? 35 : 45,
   },
   upDownButton: {
     flex: 1,

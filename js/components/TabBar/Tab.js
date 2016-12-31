@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     width: 50,
-    backgroundColor: COLORS.LIGHT_GRAY,
+    backgroundColor: 'rgb(245,245,245)',
     elevation: 8
   }
 });

@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     backgroundColor: COLORS.LIGHT_GRAY,
-    marginTop: 54
+    marginTop: 60,
   },
   loadingContainer: {
     flex: 1,
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
 
 class PostList extends Component {
 
+  // While loading posts.
   static renderPlaceholderView() {
     return (
       <View style={styles.loadingContainer}>
@@ -94,6 +95,7 @@ class PostList extends Component {
         dataSource={this.state.dataSource}
         renderRow={rowData => rowData}
         style={styles.listContainer}
+        contentContainerStyle={{ justifyContent: 'space-between' }}
 
         // Ratio of initial render to how many rendered
         // per frame.

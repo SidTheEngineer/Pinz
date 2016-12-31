@@ -8,14 +8,27 @@ import {
 
 import ViewContainer from '../../ViewContainer';
 import UpvoteDownvote from './UpvoteDownvote';
+import { COLORS } from '../../../constant';
 
 const styles = StyleSheet.create({
   postContainer: {
-    height: 85,
+    height: 95,
     flexDirection: 'row',
-    alignItems: 'stretch',
-    marginTop: 15,
-    marginRight: Platform.OS === 'ios' ? 5 : 0
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 10,
+    marginBottom: 6,
+    backgroundColor: 'white',
+    marginLeft: 10,
+    marginRight: 10,
+    elevation: 1,
+    shadowOffset: {
+      height: 1,
+      width: -1
+    },
+    shadowOpacity: 0.3,
+    shadowColor: 'black',
+    shadowRadius: 1
     // borderColor: 'rgb(150,150,150)',
     // borderStyle: 'solid',
     // borderTopWidth: 0.5,
@@ -25,6 +38,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   text: {
+    color: COLORS.GRAY,
     padding: 2,
     fontSize: Platform.OS === 'ios' ? 12 : 14
   }
