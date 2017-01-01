@@ -32,27 +32,28 @@ class Map extends Component {
     return true;
   }
 
-  static async fetchInitialMarkers() {
-    try {
-      const response = await axios.get('http://events.ucf.edu/this-week/feed.json');
-      console.log(response.data);
-    } catch (error) {
-      console.log(error);
-    }
+  static getEventCoords(event) {
+    const landmarks = MAP.LANDMARKS.filter(
+      landmark => landmark.NAME === event.location
+    );
+    console.log(event.title);
+    return landmarks[0].REGION;
   }
 
   constructor(props) {
     super(props);
 
     this.state = {
-      region: MAP.INITIAL_REGION
+      region: MAP.INITIAL_REGION,
+      events: []
     };
 
     this.onRegionChange = this.onRegionChange.bind(this);
+    this.fetchInitialMarkers = this.fetchInitialMarkers.bind(this);
   }
 
   componentDidMount() {
-    Map.fetchInitialMarkers();
+    this.fetchInitialMarkers();
   }
 
   onRegionChange(region) {
@@ -62,6 +63,17 @@ class Map extends Component {
       this.setState({
         region: MAP.INITIAL_REGION
       });
+    }
+  }
+
+  async fetchInitialMarkers() {
+    try {
+      const response = await axios.get('http://events.ucf.edu/this-week/feed.json');
+      const events = response.data.map(event => event);
+
+      this.setState({ events });
+    } catch (error) {
+      this.setState({ events: 'Could not retrieve school events' });
     }
   }
 
@@ -83,7 +95,16 @@ class Map extends Component {
           showsCompass={false}
           loadingEnabled
           onRegionChange={this.onRegionChange}
-        />
+        >
+          {
+            this.state.events.map(event => (
+              <MapView.Marker
+                key={event.event_id}
+                coordinate={Map.getEventCoords(event)}
+              />
+            ))
+          }
+        </MapView>
         {/* <Text style={styles.coordinates}>
           Latitude: {this.state.region.latitude}{'\n'}
           Longitude: {this.state.region.longitude}{'\n'}

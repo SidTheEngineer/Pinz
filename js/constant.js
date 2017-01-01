@@ -16,7 +16,23 @@ const MAP = {
   },
   TYPES: {
     RESET_MAP: 'RESET_MAP'
-  }
+  },
+  LANDMARKS: [
+    {
+      NAME: 'Student Union',
+      REGION: {
+        latitude: 28.601660,
+        longitude: -81.200788,
+      }
+    },
+    {
+      NAME: 'CFE Arena',
+      REGION: {
+        latitude: 28.607393716392387,
+        longitude: -81.19738698005676
+      }
+    }
+  ]
 };
 
 export const COLORS = {
