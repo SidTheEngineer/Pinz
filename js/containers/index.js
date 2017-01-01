@@ -1,8 +1,10 @@
 import React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+
+import * as mapActions from '../actions/map';
 import TabBar from '../components/TabBar';
-// import PostList from '../components/PostList';
+
 
 const Root = props => (
   <TabBar {...props} />
@@ -10,9 +12,8 @@ const Root = props => (
 
 const mapStateToProps = state => state;
 
-// TODO: Bind future action creators here.
 const mapDispatchToProps = dispatch => ({
-  mapActions: bindActionCreators({}, dispatch)
+  mapActions: bindActionCreators(mapActions, dispatch)
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Root);

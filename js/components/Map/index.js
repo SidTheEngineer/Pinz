@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, StatusBar, Platform } from 'react-native';
 import MapView from 'react-native-maps';
-import axios from 'axios';
 
 import ViewContainer from '../ViewContainer';
 import MAP, { COLORS } from '../../constant';
+import Event from './Event';
 
 const styles = StyleSheet.create({
   map: { flex: 5 },
@@ -32,14 +32,6 @@ class Map extends Component {
     return true;
   }
 
-  static getEventCoords(event) {
-    const landmarks = MAP.LANDMARKS.filter(
-      landmark => landmark.NAME === event.location
-    );
-    console.log(event.title);
-    return landmarks[0].REGION;
-  }
-
   constructor(props) {
     super(props);
 
@@ -49,11 +41,11 @@ class Map extends Component {
     };
 
     this.onRegionChange = this.onRegionChange.bind(this);
-    this.fetchInitialMarkers = this.fetchInitialMarkers.bind(this);
+    this.listEventMarkers = this.listEventMarkers.bind(this);
   }
 
   componentDidMount() {
-    this.fetchInitialMarkers();
+    this.props.mapActions.fetchInitialEvents();
   }
 
   onRegionChange(region) {
@@ -66,18 +58,18 @@ class Map extends Component {
     }
   }
 
-  async fetchInitialMarkers() {
-    try {
-      const response = await axios.get('http://events.ucf.edu/this-week/feed.json');
-      const events = response.data.map(event => event);
-
-      this.setState({ events });
-    } catch (error) {
-      this.setState({ events: 'Could not retrieve school events' });
+  listEventMarkers() {
+    if (this.props.map.events) {
+      return this.props.map.events.map(event => (
+        <Event key={event.event_id} event={event} />
+      ));
     }
+
+    return [];
   }
 
   render() {
+    console.log(this.props);
     return (
       <ViewContainer>
         <View style={styles.statusBarContainer}>
@@ -97,12 +89,7 @@ class Map extends Component {
           onRegionChange={this.onRegionChange}
         >
           {
-            this.state.events.map(event => (
-              <MapView.Marker
-                key={event.event_id}
-                coordinate={Map.getEventCoords(event)}
-              />
-            ))
+            this.listEventMarkers()
           }
         </MapView>
         {/* <Text style={styles.coordinates}>
@@ -115,5 +102,15 @@ class Map extends Component {
     );
   }
 }
+
+Map.propTypes = {
+  map: React.PropTypes.shape({
+    events: React.PropTypes.oneOfType([
+      React.PropTypes.arrayOf(React.PropTypes.object),
+      React.PropTypes.object
+    ])
+  }),
+  mapActions: React.PropTypes.objectOf(React.PropTypes.func)
+};
 
 export default Map;
