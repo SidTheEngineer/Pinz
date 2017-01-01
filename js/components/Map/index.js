@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, StatusBar, Platform } from 'react-native';
 import MapView from 'react-native-maps';
+import axios from 'axios';
+
 import ViewContainer from '../ViewContainer';
 import MAP, { COLORS } from '../../constant';
 
@@ -30,6 +32,15 @@ class Map extends Component {
     return true;
   }
 
+  static async fetchInitialMarkers() {
+    try {
+      const response = await axios.get('http://events.ucf.edu/this-week/feed.json');
+      console.log(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   constructor(props) {
     super(props);
 
@@ -38,6 +49,10 @@ class Map extends Component {
     };
 
     this.onRegionChange = this.onRegionChange.bind(this);
+  }
+
+  componentDidMount() {
+    Map.fetchInitialMarkers();
   }
 
   onRegionChange(region) {
@@ -79,15 +94,5 @@ class Map extends Component {
     );
   }
 }
-
-Map.propTypes = {
-  map: React.PropTypes.objectOf(React.PropTypes.object),
-  initialRegion: React.PropTypes.shape({
-    latitude: React.PropTypes.number,
-    longitude: React.PropTypes.number,
-    latitudeDelta: React.PropTypes.number,
-    longitudeDelta: React.PropTypes.number
-  })
-};
 
 export default Map;
