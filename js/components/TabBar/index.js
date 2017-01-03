@@ -10,14 +10,20 @@ import PostList from '../PostList';
 
 class TabBar extends Component {
 
-  static renderScene(route, navigator) {
+  constructor() {
+    super();
+
+    this.renderScene = this.renderScene.bind(this);
+  }
+
+  renderScene(route, navigator) {
     switch (route.title) {
 
       case 'Posts':
-        return <PostList navigator={navigator} />;
+        return <PostList {...this.props} navigator={navigator} />;
 
       default:
-        return <CategoryList navigator={navigator} />;
+        return <CategoryList {...this.props} navigator={navigator} />;
     }
   }
 
@@ -38,7 +44,7 @@ class TabBar extends Component {
         <Navigator
           navigationBar={NavigationBar}
           initialRoute={routes[0]}
-          renderScene={TabBar.renderScene}
+          renderScene={this.renderScene}
           configureScene={() => Navigator.SceneConfigs.PushFromRight}
           tabLabel="list"
         />

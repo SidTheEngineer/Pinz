@@ -41,40 +41,12 @@ class PostList extends Component {
     );
   }
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     this.state = {
-      dataSource: ds.cloneWithRows([
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-        <Post />,
-
-      ]),
+      dataSource: ds.cloneWithRows(this.props.map.events.map(event => <Post details={event} />)),
       renderPlaceholderOnly: true
     };
   }
@@ -106,5 +78,14 @@ class PostList extends Component {
     );
   }
 }
+
+PostList.propTypes = {
+  map: React.PropTypes.shape({
+    events: React.PropTypes.oneOfType([
+      React.PropTypes.arrayOf(React.PropTypes.object),
+      React.PropTypes.object
+    ])
+  })
+};
 
 export default PostList;

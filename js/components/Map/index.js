@@ -61,7 +61,7 @@ class Map extends Component {
   listEventMarkers() {
     if (this.props.map.events) {
       return this.props.map.events.map(event => (
-        <Event key={event.event_id} event={event} />
+        <Event key={event.event_id} details={event} />
       ));
     }
 
@@ -86,6 +86,7 @@ class Map extends Component {
           pitchEnabled={false}
           showsCompass={false}
           loadingEnabled
+          moveOnMarkerPress={false}
           onRegionChange={this.onRegionChange}
         >
           {

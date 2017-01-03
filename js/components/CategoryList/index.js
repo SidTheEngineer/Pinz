@@ -32,6 +32,7 @@ class CategoryList extends Component {
 
   render() {
     const { navigator } = this.props;
+
     BackAndroid.addEventListener('hardwareBackPress', () => {
       if (navigator.getCurrentRoutes().length > 1) {
         navigator.pop();

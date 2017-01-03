@@ -44,20 +44,26 @@ const styles = StyleSheet.create({
   }
 });
 
-const Post = () => (
+const Post = props => (
   <TouchableOpacity style={styles.postContainer}>
     <UpvoteDownvote />
     <ViewContainer>
       <Text style={[styles.text, styles.title]}>
-        The standard Lorem Ipsum passage, used since the 1500s
+        {props.details.title}
       </Text>
       <Text style={styles.text}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam
+        {/* Replace HTML tags that are in UCF's event descriptions */}
+        {props.details.description.replace(/<(?:.|\n)*?>/gm, '')}
       </Text>
     </ViewContainer>
   </TouchableOpacity>
 );
+
+Post.propTypes = {
+  details: React.PropTypes.shape({
+    title: React.PropTypes.string.isRequired,
+    description: React.PropTypes.string.isRequired
+  })
+};
 
 export default Post;

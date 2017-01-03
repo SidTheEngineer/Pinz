@@ -26,15 +26,15 @@ const getEventImage = (event) => {
 
 const Event = props => (
   <MapView.Marker
-    key={props.event.event_id}
-    coordinate={getEventCoords(props.event)}
-    image={getEventImage(props.event)}
+    key={props.details.event_id}
+    coordinate={getEventCoords(props.details)}
+    image={getEventImage(props.details)}
     // draggable
   />
 );
 
 Event.propTypes = {
-  event: React.PropTypes.shape({
+  details: React.PropTypes.shape({
     event_id: React.PropTypes.string
   })
 };
