@@ -7,12 +7,14 @@ const initialState = {
 };
 
 const map = (state = initialState, action) => {
+  const { loading, events } = action;
+
   switch (action.type) {
     case PENDING_CALL:
     case FAILED_CALL:
-      return Object.assign({}, state, { loading: action.loading });
+      return Object.assign({}, state, { loading });
     case RECEIVE_INITIAL_EVENTS:
-      return Object.assign({}, state, { events: action.events });
+      return Object.assign({}, state, { loading, events });
     default:
       return state;
   }

@@ -16,6 +16,7 @@ export const failedCall = () => ({
 
 export const receiveInitialEvents = events => ({
   type: RECEIVE_INITIAL_EVENTS,
+  loading: false,
   events
 });
 

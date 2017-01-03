@@ -4,7 +4,7 @@ import MapView from 'react-native-maps';
 
 import ViewContainer from '../ViewContainer';
 import MAP, { COLORS } from '../../constant';
-import Event from './Event';
+import EventMarker from './EventMarker';
 
 const styles = StyleSheet.create({
   map: { flex: 5 },
@@ -18,18 +18,13 @@ const styles = StyleSheet.create({
 class Map extends Component {
 
   static isInBounds(region) {
-    if (region.latitudeDelta >= MAP.BOUNDS.MIN_ZOOM) {
-      return false;
-    } else if (region.longitude >= MAP.BOUNDS.RIGHT_BOUNDS) {
-      return false;
-    } else if (region.latitude >= MAP.BOUNDS.TOP_BOUNDS) {
-      return false;
-    } else if (region.longitude <= MAP.BOUNDS.LEFT_BOUNDS) {
-      return false;
-    } else if (region.latitude <= MAP.BOUNDS.BOTTOM_BOUNDS) {
-      return false;
-    }
-    return true;
+    return (
+         (region.latitudeDelta < MAP.BOUNDS.MIN_ZOOM)
+      && (region.longitude < MAP.BOUNDS.RIGHT_BOUNDS)
+      && (region.latitude < MAP.BOUNDS.TOP_BOUNDS)
+      && (region.longitude > MAP.BOUNDS.LEFT_BOUNDS)
+      && (region.latitude > MAP.BOUNDS.BOTTOM_BOUNDS)
+    );
   }
 
   constructor(props) {
@@ -52,24 +47,17 @@ class Map extends Component {
     this.setState({ region });
 
     if (!Map.isInBounds(region)) {
-      this.setState({
-        region: MAP.INITIAL_REGION
-      });
+      this.setState({ region: MAP.INITIAL_REGION });
     }
   }
 
   listEventMarkers() {
-    if (this.props.map.events) {
-      return this.props.map.events.map(event => (
-        <Event key={event.event_id} details={event} />
-      ));
-    }
-
-    return [];
+    return this.props.map.events.map(event => (
+      <EventMarker key={event.event_id} details={event} />
+    ));
   }
 
   render() {
-    console.log(this.props);
     return (
       <ViewContainer>
         <View style={styles.statusBarContainer}>

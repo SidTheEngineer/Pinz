@@ -44,7 +44,7 @@ const NavigationBar = (
 
         return (
           <TouchableOpacity
-            style={[styles.iconContainer, { marginLeft: 20 }]}
+            style={[styles.iconContainer, { marginLeft: 5 }]}
             onPress={() => navigator.pop()}
           >
             <Icon name="angle-left" size={30} color={'white'} />
