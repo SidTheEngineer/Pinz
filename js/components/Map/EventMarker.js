@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     width: 250,
     backgroundColor: COLORS.RED,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   title: {
     fontWeight: 'bold',

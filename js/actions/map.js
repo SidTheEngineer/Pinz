@@ -34,7 +34,8 @@ export const fetchInitialEvents = () => (
   }
 );
 
-export const showEventModal = modalVisibility => ({
+export const showEventModal = (modalVisibility, modalDetails) => ({
   type: SHOW_EVENT_MODAL,
-  modalVisibility
+  modalVisibility,
+  modalDetails
 });

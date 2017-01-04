@@ -34,7 +34,7 @@ class Map extends Component {
     this.state = {
       region: MAP.INITIAL_REGION,
       events: [],
-      modalVisible: false
+      modalVisibility: false
     };
 
     this.onRegionChange = this.onRegionChange.bind(this);
@@ -55,7 +55,7 @@ class Map extends Component {
   }
 
   setModalVisibility(visible) {
-    this.setState({ modalVisible: visible });
+    this.setState({ modalVisibility: visible });
   }
 
   listEventMarkers() {
@@ -63,12 +63,13 @@ class Map extends Component {
       <EventMarker
         key={event.event_id}
         details={event}
-        loadModal={() => this.props.mapActions.showEventModal(true)}
+        loadModal={() => this.props.mapActions.showEventModal(true, event)}
       />
     ));
   }
 
   render() {
+    console.log(this.props);
     return (
       <ViewContainer>
         <View style={styles.statusBarContainer}>
@@ -92,12 +93,6 @@ class Map extends Component {
             this.listEventMarkers()
           }
         </MapView>
-        {/* <Text style={styles.coordinates}>
-          Latitude: {this.state.region.latitude}{'\n'}
-          Longitude: {this.state.region.longitude}{'\n'}
-          Latitude Delta: {this.state.region.latitudeDelta}{'\n'}
-          Longitude Delta: {this.state.region.longitudeDelta}{'\n'}
-        </Text> */}
         <EventModal {...this.props} />
       </ViewContainer>
     );
