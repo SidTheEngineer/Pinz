@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   categoryListContainer: {
     flex: 1,
     backgroundColor: COLORS.LIGHT_GRAY,
-    marginTop: 54
+    marginTop: 64
   }
 });
 

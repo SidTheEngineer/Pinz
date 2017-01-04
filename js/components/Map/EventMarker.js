@@ -47,7 +47,11 @@ const EventMarker = props => (
     coordinate={getEventCoords(props.details)}
     image={getEventImage(props.details)}
   >
-    <MapView.Callout tooltip style={styles.calloutContainer}>
+    <MapView.Callout
+      tooltip
+      style={styles.calloutContainer}
+      onPress={props.loadModal}
+    >
       <Text style={[styles.text, styles.title]}>
         {props.details.title.substring(0, 40)}
       </Text>
@@ -60,7 +64,8 @@ EventMarker.propTypes = {
     event_id: React.PropTypes.string,
     title: React.PropTypes.string,
     description: React.PropTypes.string
-  })
+  }),
+  loadModal: React.PropTypes.func
 };
 
 export default EventMarker;

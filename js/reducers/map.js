@@ -1,13 +1,16 @@
 const PENDING_CALL = 'PENDING_CALL';
 const FAILED_CALL = 'FAILED_CALL';
 const RECEIVE_INITIAL_EVENTS = 'RECEIVE_INITIAL_EVENTS';
+const SHOW_EVENT_MODAL = 'SHOW_EVENT_MODAL';
+
 const initialState = {
   events: [],
-  loading: false
+  loading: false,
+  modalVisibility: false
 };
 
 const map = (state = initialState, action) => {
-  const { loading, events } = action;
+  const { loading, events, modalVisibility } = action;
 
   switch (action.type) {
     case PENDING_CALL:
@@ -15,6 +18,8 @@ const map = (state = initialState, action) => {
       return Object.assign({}, state, { loading });
     case RECEIVE_INITIAL_EVENTS:
       return Object.assign({}, state, { loading, events });
+    case SHOW_EVENT_MODAL:
+      return Object.assign({}, state, { modalVisibility });
     default:
       return state;
   }

@@ -3,6 +3,7 @@ import axios from 'axios';
 const PENDING_CALL = 'PENDING_CALL';
 const FAILED_CALL = 'FAILED_CALL';
 const RECEIVE_INITIAL_EVENTS = 'RECEIVE_INITIAL_EVENTS';
+const SHOW_EVENT_MODAL = 'SHOW_EVENT_MODAL';
 
 export const pendingCall = () => ({
   type: PENDING_CALL,
@@ -32,3 +33,8 @@ export const fetchInitialEvents = () => (
     }
   }
 );
+
+export const showEventModal = modalVisibility => ({
+  type: SHOW_EVENT_MODAL,
+  modalVisibility
+});

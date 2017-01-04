@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
   },
   text: {
     marginLeft: 15,
-    color: COLORS.GRAY
+    color: COLORS.GRAY,
+    fontWeight: 'bold'
   }
 });
 

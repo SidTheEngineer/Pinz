@@ -3,16 +3,16 @@ import {
   TouchableOpacity,
   StyleSheet,
   Text,
+  View,
   Platform
 } from 'react-native';
 
-import ViewContainer from '../../ViewContainer';
 import UpvoteDownvote from './UpvoteDownvote';
 import { COLORS } from '../../../constant';
 
 const styles = StyleSheet.create({
   postContainer: {
-    height: 95,
+    height: 100,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
@@ -34,6 +34,10 @@ const styles = StyleSheet.create({
     // borderTopWidth: 0.5,
     // borderBottomWidth: 0.5,
   },
+  textContainer: {
+    flex: 1,
+    flexDirection: 'column',
+  },
   title: {
     fontWeight: 'bold',
   },
@@ -47,15 +51,25 @@ const styles = StyleSheet.create({
 const Post = props => (
   <TouchableOpacity style={styles.postContainer}>
     <UpvoteDownvote />
-    <ViewContainer>
+    <View style={styles.textContainer}>
       <Text style={[styles.text, styles.title]}>
-        {props.details.title}
+        {props.details.title.replace(/<(?:.|\n)*?>/gm, '')}
       </Text>
       <Text style={styles.text}>
-        {/* Replace HTML tags that are in UCF's event descriptions */}
-        {props.details.description.replace(/<(?:.|\n)*?>/gm, '')}
+        {/* Replace HTML tags that are in UCF's event descriptions. */}
+        {/* Strip blank lines in description. */}
+        {
+          props.details.description.length > 100
+            ? `${
+                  props.details.description
+                    .replace(/<(?:.|\n)*?>/gm, '')
+                    .replace(/^\s*[\r\n]/gm, '')
+                    .trim()
+                }...`
+            : props.details.description
+        }
       </Text>
-    </ViewContainer>
+    </View>
   </TouchableOpacity>
 );
 

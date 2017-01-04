@@ -5,6 +5,7 @@ import MapView from 'react-native-maps';
 import ViewContainer from '../ViewContainer';
 import MAP, { COLORS } from '../../constant';
 import EventMarker from './EventMarker';
+import EventModal from './EventModal';
 
 const styles = StyleSheet.create({
   map: { flex: 5 },
@@ -32,11 +33,13 @@ class Map extends Component {
 
     this.state = {
       region: MAP.INITIAL_REGION,
-      events: []
+      events: [],
+      modalVisible: false
     };
 
     this.onRegionChange = this.onRegionChange.bind(this);
     this.listEventMarkers = this.listEventMarkers.bind(this);
+    this.setModalVisibility = this.setModalVisibility.bind(this);
   }
 
   componentDidMount() {
@@ -51,9 +54,17 @@ class Map extends Component {
     }
   }
 
+  setModalVisibility(visible) {
+    this.setState({ modalVisible: visible });
+  }
+
   listEventMarkers() {
     return this.props.map.events.map(event => (
-      <EventMarker key={event.event_id} details={event} />
+      <EventMarker
+        key={event.event_id}
+        details={event}
+        loadModal={() => this.props.mapActions.showEventModal(true)}
+      />
     ));
   }
 
@@ -87,6 +98,7 @@ class Map extends Component {
           Latitude Delta: {this.state.region.latitudeDelta}{'\n'}
           Longitude Delta: {this.state.region.longitudeDelta}{'\n'}
         </Text> */}
+        <EventModal {...this.props} />
       </ViewContainer>
     );
   }
@@ -97,7 +109,8 @@ Map.propTypes = {
     events: React.PropTypes.oneOfType([
       React.PropTypes.arrayOf(React.PropTypes.object),
       React.PropTypes.object
-    ])
+    ]),
+    modalVisibility: React.PropTypes.bool.isRequired
   }),
   mapActions: React.PropTypes.objectOf(React.PropTypes.func)
 };
