@@ -12,13 +12,14 @@ const initialState = {
 
 const map = (state = initialState, action) => {
   const {
+    type,
     loading,
     events,
     modalVisibility,
     modalDetails
   } = action;
 
-  switch (action.type) {
+  switch (type) {
     case PENDING_CALL:
     case FAILED_CALL:
       return Object.assign({}, state, { loading });

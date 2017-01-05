@@ -1,10 +1,11 @@
 import React from 'react';
 import {
   Modal,
-  Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  ScrollView,
+  TouchableOpacity
 } from 'react-native';
 
 import { COLORS } from '../../constant';
@@ -19,8 +20,8 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    marginTop: 80,
-    marginBottom: 80,
+    marginTop: 125,
+    marginBottom: 125,
     marginLeft: 30,
     marginRight: 30,
     backgroundColor: 'white',
@@ -29,22 +30,32 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderRadius: 10
   },
+  textContainer: {
+    marginLeft: 25,
+    marginRight: 25,
+    alignItems: 'center'
+  },
   title: {
-    flex: Platform.OS === 'ios' ? 0.10 : 0.05,
     marginTop: 25,
     color: COLORS.GRAY,
+    justifyContent: 'center',
+    alignItems: 'center',
     fontSize: 18,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   description: {
-    flex: Platform.OS === 'ios' ? 0.90 : 0.95,
     marginTop: 30,
     color: COLORS.GRAY,
     justifyContent: 'center',
     alignItems: 'center',
-    fontSize: 14,
-    marginLeft: 20,
-    marginRight: 20
+    fontSize: 16,
+  },
+  back: {
+    color: COLORS.LIGHT_GREEN,
+    fontSize: 18,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 20
   }
 });
 
@@ -68,20 +79,27 @@ const EventModal = props => (
   >
     <View style={styles.background}>
       <View style={styles.modalContainer}>
-        <Text style={styles.title}>
-          {
-            props.map.modalDetails
-            ? formatTitle(props.map.modalDetails.title)
-            : ''
-          }
-        </Text>
-        <Text style={styles.description}>
-          {
-            props.map.modalDetails
-            ? formatDescription(props.map.modalDetails.description)
-            : ''
-          }
-        </Text>
+        <View style={styles.textContainer}>
+          <Text style={styles.title}>
+            {
+              props.map.modalDetails
+              ? formatTitle(props.map.modalDetails.title)
+              : ''
+            }
+          </Text>
+          <ScrollView style={{ marginTop: 15, marginBottom: 10 }}>
+            <Text style={styles.description}>
+              {
+                props.map.modalDetails
+                ? formatDescription(props.map.modalDetails.description)
+                : ''
+              }
+            </Text>
+          </ScrollView>
+          <TouchableOpacity onPress={() => props.mapActions.showEventModal(false, null)}>
+            <Text style={styles.back}>Back</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   </Modal>
