@@ -6,7 +6,7 @@ import CustomTabBar from './CustomTabBar';
 import NavigationBar from '../NavigationBar';
 import Map from '../Map';
 import CategoryList from '../CategoryList';
-import PostList from '../PostList';
+import EventList from '../EventList';
 
 class TabBar extends Component {
 
@@ -19,8 +19,8 @@ class TabBar extends Component {
   renderScene(route, navigator) {
     switch (route.title) {
 
-      case 'Posts':
-        return <PostList {...this.props} navigator={navigator} />;
+      case 'Events':
+        return <EventList {...this.props} navigator={navigator} />;
 
       default:
         return <CategoryList {...this.props} navigator={navigator} />;
@@ -30,7 +30,7 @@ class TabBar extends Component {
   render() {
     const routes = [
       { title: 'Categories', index: 0 },
-      { title: 'Posts', index: 1 }
+      { title: 'Events', index: 1 }
     ];
 
 

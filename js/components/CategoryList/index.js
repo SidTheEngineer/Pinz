@@ -43,8 +43,7 @@ class CategoryList extends Component {
 
     return (
       <ScrollView style={styles.categoryListContainer}>
-        <Category {...this.props} title={'Posts'} navigate={() => this.navigate('Posts')} />
-        <Category {...this.props} title={'Events'} />
+        <Category {...this.props} title={'Events'} navigate={() => this.navigate('Events')} />
         <Category {...this.props} title={'Garages'} />
         <Category {...this.props} title={'Food'} />
         <Category {...this.props} title={'Test'} />

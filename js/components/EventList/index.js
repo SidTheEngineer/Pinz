@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   }
 });
 
-class PostList extends Component {
+class EventList extends Component {
 
   // While loading posts.
   static renderPlaceholderView() {
@@ -59,7 +59,7 @@ class PostList extends Component {
 
   render() {
     if (this.state.renderPlaceholderOnly) {
-      return PostList.renderPlaceholderView();
+      return EventList.renderPlaceholderView();
     }
 
     return (
@@ -79,7 +79,7 @@ class PostList extends Component {
   }
 }
 
-PostList.propTypes = {
+EventList.propTypes = {
   map: React.PropTypes.shape({
     events: React.PropTypes.oneOfType([
       React.PropTypes.arrayOf(React.PropTypes.object),
@@ -88,4 +88,4 @@ PostList.propTypes = {
   })
 };
 
-export default PostList;
+export default EventList;
