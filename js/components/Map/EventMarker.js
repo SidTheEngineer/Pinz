@@ -28,7 +28,16 @@ const getEventCoords = (event) => {
   const landmarks = MAP.LANDMARKS.filter(
     landmark => landmark.NAME === event.location
   );
-  return landmarks[0].REGION;
+
+  /*
+    TODO: If the event matches none of the predefined landmark regions, then
+    a custom latlng region was defined for the event, this will need to be taken
+    care of in the future! (Otherwise, these events default to the SU)
+  */
+  return landmarks.length > 0 ? landmarks[0].REGION : {
+    latitude: 28.601660,
+    longitude: -81.200788,
+  };
 };
 
 // Supply a custom marker image based on category of event.

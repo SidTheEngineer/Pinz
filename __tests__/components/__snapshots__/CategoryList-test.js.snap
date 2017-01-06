@@ -1,0 +1,235 @@
+exports[`CategoryList renders correctly 1`] = `
+<ScrollView
+  style={
+    Object {
+      "backgroundColor": "rgb(235,235,235)",
+      "flex": 1,
+      "marginTop": 64,
+    }
+  }>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    onPress={[Function]}
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 75,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "margin": 5,
+        }
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "rgb(100,100,100)",
+            "fontWeight": "bold",
+            "marginLeft": 15,
+          }
+        }>
+        Events
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "rgb(100,100,100)",
+              "fontSize": 20,
+            },
+            Object {
+              "marginRight": 15,
+            },
+            Object {
+              "fontFamily": "FontAwesome",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
+        }>
+        
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    onPress={undefined}
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 75,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "margin": 5,
+        }
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "rgb(100,100,100)",
+            "fontWeight": "bold",
+            "marginLeft": 15,
+          }
+        }>
+        Garages
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "rgb(100,100,100)",
+              "fontSize": 20,
+            },
+            Object {
+              "marginRight": 15,
+            },
+            Object {
+              "fontFamily": "FontAwesome",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
+        }>
+        
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    onPress={undefined}
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 75,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "margin": 5,
+        }
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "rgb(100,100,100)",
+            "fontWeight": "bold",
+            "marginLeft": 15,
+          }
+        }>
+        Food
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "rgb(100,100,100)",
+              "fontSize": 20,
+            },
+            Object {
+              "marginRight": 15,
+            },
+            Object {
+              "fontFamily": "FontAwesome",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
+        }>
+        
+      </Text>
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity
+    activeOpacity={0.2}
+    onPress={undefined}
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 75,
+      }
+    }>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "margin": 5,
+        }
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "rgb(100,100,100)",
+            "fontWeight": "bold",
+            "marginLeft": 15,
+          }
+        }>
+        Test
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "rgb(100,100,100)",
+              "fontSize": 20,
+            },
+            Object {
+              "marginRight": 15,
+            },
+            Object {
+              "fontFamily": "FontAwesome",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
+        }>
+        
+      </Text>
+    </View>
+  </TouchableOpacity>
+</ScrollView>
+`;

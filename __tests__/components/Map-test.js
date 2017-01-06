@@ -1,10 +1,34 @@
 import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
+
 import Map from '../../js/components/Map';
 import MAP from '../../js/constant';
 
 jest.mock('react-native-maps', () => 'MapView');
+jest.mock('../../js/components/Map/EventMarker', () => 'EventMarker');
+
+const props = {
+  map: {
+    modalVisibility: false,
+    modalDetails: null,
+    events: [
+      {
+        event_id: '12345',
+        id: '12345',
+        title: 'This is a test event',
+        description: 'test test test',
+        location: 'Location 123',
+        starts: 'midnight',
+        ends: 'midnight',
+        category: 'Sports'
+      }
+    ]
+  },
+  mapActions: {
+    fetchInitialEvents: jest.fn()
+  }
+};
 
 expect.extend({
   // Takes in an area where the map would consider out of bounds.
@@ -26,7 +50,7 @@ expect.extend({
 describe('Map', () => {
   it('renders correctly', () => {
     const map = renderer.create(
-      <Map map={MAP} />
+      <Map {...props} />
     ).toJSON();
     expect(map).toMatchSnapshot();
   });

@@ -1,0 +1,45 @@
+exports[`EventList renders an ActivityIndicator 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "rgb(235,235,235)",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(51, 204, 94)"
+    hidesWhenStopped={true}
+    size={50}
+    style={
+      Object {
+        "marginBottom": 100,
+      }
+    } />
+</View>
+`;
+
+exports[`EventList renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "rgb(235,235,235)",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }>
+  <ActivityIndicator
+    animating={true}
+    color="rgb(51, 204, 94)"
+    hidesWhenStopped={true}
+    size={50}
+    style={
+      Object {
+        "marginBottom": 100,
+      }
+    } />
+</View>
+`;
