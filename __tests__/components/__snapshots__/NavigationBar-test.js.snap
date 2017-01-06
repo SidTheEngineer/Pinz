@@ -1,0 +1,147 @@
+exports[`NavigationBar renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "overflow": "hidden",
+      },
+      undefined,
+    ]
+  }>
+  <View
+    onMoveShouldSetResponder={[Function]}
+    onMoveShouldSetResponderCapture={[Function]}
+    onResponderEnd={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderReject={[Function]}
+    onResponderRelease={[Function]}
+    onResponderStart={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    onStartShouldSetResponderCapture={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+        "overflow": "hidden",
+      }
+    }>
+    <View
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="auto"
+      style={
+        Array [
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "overflow": "hidden",
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          null,
+        ]
+      } />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": 64,
+        },
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "rgb(79,232,122)",
+          "height": 64,
+          "justifyContent": "center",
+        },
+      ]
+    }>
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "transparent",
+          "height": 44,
+          "left": 0,
+          "opacity": 1,
+          "position": "absolute",
+          "right": 0,
+          "top": 20,
+        }
+      }>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "alignItems": "center",
+            "color": "white",
+            "flex": 1,
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "justifyContent": "center",
+            "marginTop": 6,
+          }
+        }>
+        test
+      </Text>
+    </View>
+    <View
+      pointerEvents="box-none"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "height": 44,
+          "left": 0,
+          "opacity": 1,
+          "overflow": "hidden",
+          "position": "absolute",
+          "top": 20,
+        }
+      }>
+      <TouchableOpacity
+        activeOpacity={0.2}
+        onPress={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "marginTop": 1,
+              "width": 80,
+            },
+            Object {
+              "marginLeft": 5,
+            },
+          ]
+        }>
+        <Icon
+          color="white"
+          name="angle-left"
+          size={30} />
+      </TouchableOpacity>
+    </View>
+  </View>
+</View>
+`;
