@@ -1,7 +1,4 @@
-const PENDING_CALL = 'PENDING_CALL';
-const FAILED_CALL = 'FAILED_CALL';
-const RECEIVE_INITIAL_EVENTS = 'RECEIVE_INITIAL_EVENTS';
-const SHOW_EVENT_MODAL = 'SHOW_EVENT_MODAL';
+import * as types from '../actions/types';
 
 const initialState = {
   events: [],
@@ -20,12 +17,12 @@ const map = (state = initialState, action) => {
   } = action;
 
   switch (type) {
-    case PENDING_CALL:
-    case FAILED_CALL:
+    case types.PENDING_CALL:
+    case types.FAILED_CALL:
       return Object.assign({}, state, { loading });
-    case RECEIVE_INITIAL_EVENTS:
+    case types.RECEIVE_INITIAL_EVENTS:
       return Object.assign({}, state, { loading, events });
-    case SHOW_EVENT_MODAL:
+    case types.SHOW_EVENT_MODAL:
       return Object.assign({}, state, { modalVisibility, modalDetails });
     default:
       return state;
