@@ -61,7 +61,7 @@ class Map extends Component {
   listEventMarkers() {
     return this.props.map.events.map(event => (
       <EventMarker
-        key={event.event_id}
+        key={event.id}
         details={event}
         loadModal={() => this.props.mapActions.showEventModal(true, event)}
       />

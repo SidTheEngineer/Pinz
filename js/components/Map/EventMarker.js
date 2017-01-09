@@ -52,7 +52,7 @@ const getEventImage = (event) => {
 
 const EventMarker = props => (
   <MapView.Marker
-    key={props.details.event_id}
+    key={props.details.id}
     coordinate={getEventCoords(props.details)}
     image={getEventImage(props.details)}
   >
@@ -70,7 +70,7 @@ const EventMarker = props => (
 
 EventMarker.propTypes = {
   details: React.PropTypes.shape({
-    event_id: React.PropTypes.string,
+    id: React.PropTypes.string,
     title: React.PropTypes.string,
     description: React.PropTypes.string
   }),
