@@ -27,6 +27,15 @@ const styles = StyleSheet.create({
 
 class EventList extends Component {
 
+  static propTypes = {
+    map: React.PropTypes.shape({
+      events: React.PropTypes.oneOfType([
+        React.PropTypes.arrayOf(React.PropTypes.object),
+        React.PropTypes.object
+      ])
+    })
+  }
+
   // While loading posts.
   static renderPlaceholderView() {
     return (
@@ -78,14 +87,5 @@ class EventList extends Component {
     );
   }
 }
-
-EventList.propTypes = {
-  map: React.PropTypes.shape({
-    events: React.PropTypes.oneOfType([
-      React.PropTypes.arrayOf(React.PropTypes.object),
-      React.PropTypes.object
-    ])
-  })
-};
 
 export default EventList;

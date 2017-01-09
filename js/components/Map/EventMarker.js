@@ -62,7 +62,11 @@ const EventMarker = props => (
       onPress={props.loadModal}
     >
       <Text style={[styles.text, styles.title]}>
-        {props.details.title.substring(0, 40)}
+        {
+          props.details.title.length > 40
+          ? `${props.details.title.substring(0, 40)}...`
+          : props.details.title
+        }
       </Text>
     </MapView.Callout>
   </MapView.Marker>

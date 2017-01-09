@@ -1,5 +1,10 @@
 {
   "extends": "airbnb",
+  "ecmaFeatures": {
+    "classes": true,
+    "jsx": true
+  },
+  "parser": "babel-eslint",
   "rules": {
 
     // Remove trailing comma error.
