@@ -18,6 +18,17 @@ const styles = StyleSheet.create({
 
 class Map extends Component {
 
+  static propTypes = {
+    map: React.PropTypes.shape({
+      events: React.PropTypes.oneOfType([
+        React.PropTypes.arrayOf(React.PropTypes.object),
+        React.PropTypes.object
+      ]),
+      modalVisibility: React.PropTypes.bool.isRequired
+    }),
+    mapActions: React.PropTypes.objectOf(React.PropTypes.func)
+  }
+
   static isInBounds(region) {
     return (
          (region.latitudeDelta < MAP.BOUNDS.MIN_ZOOM)
@@ -97,16 +108,5 @@ class Map extends Component {
     );
   }
 }
-
-Map.propTypes = {
-  map: React.PropTypes.shape({
-    events: React.PropTypes.oneOfType([
-      React.PropTypes.arrayOf(React.PropTypes.object),
-      React.PropTypes.object
-    ]),
-    modalVisibility: React.PropTypes.bool.isRequired
-  }),
-  mapActions: React.PropTypes.objectOf(React.PropTypes.func)
-};
 
 export default Map;

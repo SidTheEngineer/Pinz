@@ -18,6 +18,14 @@ const styles = StyleSheet.create({
 
 class CategoryList extends Component {
 
+  static propTypes = {
+    navigator: React.PropTypes.shape({
+      push: React.PropTypes.func.isRequired,
+      pop: React.PropTypes.func.isRequired,
+      getCurrentRoutes: React.PropTypes.func.isRequired
+    })
+  }
+
   constructor() {
     super();
 
@@ -51,13 +59,5 @@ class CategoryList extends Component {
     );
   }
 }
-
-CategoryList.propTypes = {
-  navigator: React.PropTypes.shape({
-    push: React.PropTypes.func.isRequired,
-    pop: React.PropTypes.func.isRequired,
-    getCurrentRoutes: React.PropTypes.func.isRequired
-  }),
-};
 
 export default CategoryList;
