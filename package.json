@@ -23,7 +23,8 @@
     "redux-thunk": "^2.1.0"
   },
   "jest": {
-    "preset": "jest-react-native"
+    "preset": "jest-react-native",
+    "verbose": true
   },
   "devDependencies": {
     "babel-jest": "17.0.2",
