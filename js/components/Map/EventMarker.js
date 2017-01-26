@@ -2,7 +2,8 @@ import React from 'react';
 import MapView from 'react-native-maps';
 import { Text, StyleSheet } from 'react-native';
 
-import MAP, { COLORS } from '../../constant';
+import LANDMARKS from '../../landmarks';
+import { COLORS } from '../../constant';
 import active from './assets/active.png';
 import place from './assets/place.png';
 
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
 
 // Supply coordinates of event based on name of location.
 const getEventCoords = (event) => {
-  const landmarks = MAP.LANDMARKS.filter(
+  const landmarks = LANDMARKS.filter(
     landmark => landmark.NAME === event.location
   );
 

@@ -39,9 +39,11 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   title: {
-    fontWeight: 'bold',
+    flex: 0.2,
+    fontWeight: 'bold'
   },
   text: {
+    flex: 0.8,
     color: COLORS.GRAY,
     padding: 2,
     fontSize: Platform.OS === 'ios' ? 12 : 14
@@ -59,12 +61,13 @@ const Post = props => (
         {/* Replace HTML tags that are in UCF's event descriptions. */}
         {/* Strip blank lines in description. */}
         {
-          props.details.description.length > 100
+          props.details.description.length > 200
             ? `${
                   props.details.description
                     .replace(/<(?:.|\n)*?>/gm, '')
                     .replace(/^\s*[\r\n]/gm, '')
                     .trim()
+                    .substring(0, 200)
                 }...`
             : props.details.description
         }
