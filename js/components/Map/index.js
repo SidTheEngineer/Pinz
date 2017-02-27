@@ -80,6 +80,7 @@ class Map extends Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <ViewContainer>
         <View style={styles.statusBarContainer}>

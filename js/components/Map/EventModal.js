@@ -44,7 +44,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   description: {
-    marginTop: 30,
     color: COLORS.GRAY,
     justifyContent: 'center',
     alignItems: 'center',
@@ -56,6 +55,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: 20
+  },
+  time: {
+    marginTop: 30,
+    fontWeight: 'bold',
   }
 });
 
@@ -68,6 +71,11 @@ const formatDescription = description => (
     .replace(/<(?:.|\n)*?>/gm, '')
     .replace(/^\s*[\r\n]/gm, '')
     .trim()
+);
+
+
+const formatTime = time => (
+  time
 );
 
 const EventModal = props => (
@@ -85,6 +93,14 @@ const EventModal = props => (
               props.map.modalDetails
               ? formatTitle(props.map.modalDetails.title)
               : ''
+            }
+          </Text>
+          <Text style={styles.time}>Starts: {
+              props.map.modalDetails ? formatTime(props.map.modalDetails.starts) : ''
+            }
+          </Text>
+          <Text style={styles.time}>Ends: {
+              props.map.modalDetails ? formatTime(props.map.modalDetails.ends) : ''
             }
           </Text>
           <ScrollView style={{ marginTop: 15, marginBottom: 10 }}>
@@ -110,7 +126,9 @@ EventModal.propTypes = {
     modalVisibility: React.PropTypes.bool.isRequired,
     modalDetails: React.PropTypes.shape({
       title: React.PropTypes.string,
-      description: React.PropTypes.string
+      description: React.PropTypes.string,
+      starts: React.PropTypes.string,
+      ends: React.PropTypes.string
     }),
   }),
   mapActions: React.PropTypes.objectOf(React.PropTypes.func)
