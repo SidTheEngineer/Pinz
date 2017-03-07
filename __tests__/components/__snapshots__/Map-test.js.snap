@@ -108,6 +108,32 @@ exports[`Map renders correctly 1`] = `
             }>
             
           </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+                "marginTop": 30,
+              }
+            }>
+            Starts: 
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "fontWeight": "bold",
+                "marginTop": 30,
+              }
+            }>
+            Ends: 
+            
+          </Text>
           <ScrollView
             style={
               Object {
@@ -125,7 +151,6 @@ exports[`Map renders correctly 1`] = `
                   "color": "rgb(100,100,100)",
                   "fontSize": 16,
                   "justifyContent": "center",
-                  "marginTop": 30,
                 }
               }>
               

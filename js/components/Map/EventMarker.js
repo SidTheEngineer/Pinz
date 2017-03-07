@@ -9,11 +9,14 @@ import place from './assets/place.png';
 
 const styles = StyleSheet.create({
   calloutContainer: {
-    height: 25,
+    height: 30,
     width: 250,
     backgroundColor: COLORS.RED,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    flexDirection: 'row',
+    borderRadius: 10,
+    marginBottom: 50
   },
   title: {
     fontWeight: 'bold',
@@ -62,10 +65,10 @@ const EventMarker = props => (
       style={styles.calloutContainer}
       onPress={props.loadModal}
     >
-      <Text style={[styles.text, styles.title]}>
+      <Text style={[styles.text, styles.title]} ellipsizeMode="tail">
         {
-          props.details.title.length > 40
-          ? `${props.details.title.substring(0, 40)}...`
+          props.details.title.length > 30
+          ? `${props.details.title.substring(0, 30)}...`
           : props.details.title
         }
       </Text>

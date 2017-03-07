@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
   textContainer: {
     flex: 1,
     flexDirection: 'column',
+    margin: 10
   },
   title: {
     flex: 0.2,
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
     flex: 0.8,
     color: COLORS.GRAY,
     padding: 2,
-    fontSize: Platform.OS === 'ios' ? 12 : 14
+    fontSize: Platform.OS === 'ios' ? 12 : 14,
   }
 });
 
@@ -57,7 +58,7 @@ const Post = props => (
       <Text style={[styles.text, styles.title]}>
         {props.details.title.replace(/<(?:.|\n)*?>/gm, '')}
       </Text>
-      <Text style={styles.text}>
+      <Text style={styles.text} ellipsizeMode="tail">
         {/* Replace HTML tags that are in UCF's event descriptions. */}
         {/* Strip blank lines in description. */}
         {
