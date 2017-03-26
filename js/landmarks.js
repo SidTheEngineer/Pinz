@@ -1,5 +1,18 @@
 // The names of these landmarks should coincide with those of the
 // "location" field in the university's events json.
+//
+// TODO: Use the new LANDMARKS object instead of array,
+//       that way we can create key, value pairs instead
+//       looping through a long array.
+//
+// const LANDMARKS = {
+//   'Student Union': {
+//     REGION: {
+//       latitude: 28.601660,
+//       longitude: -81.200788,
+//     }
+//   }
+// };
 
 const LANDMARKS = [
   {

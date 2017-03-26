@@ -27,7 +27,12 @@ const styles = StyleSheet.create({
   }
 });
 
-// Supply coordinates of event based on name of location.
+// TODO: Use the new LANDMARKS object instead of array.
+//       Supply coordinates of event based on name of location.
+//       (Like a key, value Map, mentioned in landmarks.js).
+//       This is faster/easier than looping through a giant array.
+//       This may eventually change to a giant JSON object.
+
 const getEventCoords = (event) => {
   const landmarks = LANDMARKS.filter(
     landmark => landmark.NAME === event.location
