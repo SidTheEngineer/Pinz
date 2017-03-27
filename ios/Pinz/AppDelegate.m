@@ -19,8 +19,13 @@
 {
   NSURL *jsCodeLocation;
 
+  NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"configuration" ofType:@"plist"];
+  NSDictionary *configuration = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+  NSString *apiKey = configuration[@"GoogleMapsKey"];
+  
+
   // Google Maps support.
-  [GMSServices provideAPIKey:@"AIzaSyAP0PWROI4OfbVPpRWH7Jb-PMv6-lcN7SQ"];
+  [GMSServices provideAPIKey:apiKey];
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.ios" fallbackResource:nil];
 

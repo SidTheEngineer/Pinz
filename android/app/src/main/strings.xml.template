@@ -1,0 +1,4 @@
+<!-- Your secret stuff should go here. -->
+<resources>
+  <string name="GoogleMapsKey">AIzaSyAIOB2J3g4B1d9sZtsuvYf5h5OlfEtOkZs</string>
+</resources>

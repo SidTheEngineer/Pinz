@@ -47,6 +47,7 @@
 		1F022FED1E0B682400DF5F43 /* AIRMapUrlTileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F022FD11E0B682400DF5F43 /* AIRMapUrlTileManager.m */; };
 		1F022FEE1E0B682400DF5F43 /* SMCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F022FD41E0B682400DF5F43 /* SMCalloutView.m */; };
 		1F022FEF1E0B682400DF5F43 /* RCTConvert+MoreMapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F022FD61E0B682400DF5F43 /* RCTConvert+MoreMapKit.m */; };
+		1F2F2A481E88D57B0075988C /* configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F2F2A471E88D57B0075988C /* configuration.plist */; };
 		1F8022B11E0CD9DC002FA3D9 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F8022A81E0CD9DC002FA3D9 /* FontAwesome.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		E6F513DB00F3E628BF6590F5 /* Pods_Pinz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9E4B54D7382941BC259EB07 /* Pods_Pinz.framework */; };
@@ -252,6 +253,7 @@
 		1F022FD41E0B682400DF5F43 /* SMCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCalloutView.m; sourceTree = "<group>"; };
 		1F022FD51E0B682400DF5F43 /* RCTConvert+MoreMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+MoreMapKit.h"; sourceTree = "<group>"; };
 		1F022FD61E0B682400DF5F43 /* RCTConvert+MoreMapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+MoreMapKit.m"; sourceTree = "<group>"; };
+		1F2F2A471E88D57B0075988C /* configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = configuration.plist; path = Pinz/configuration.plist; sourceTree = "<group>"; };
 		1F8022A81E0CD9DC002FA3D9 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		1FC897831E19C48A00D9B1B7 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		2D42276B5D6CE62BB986730F /* Pods-Pinz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pinz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pinz/Pods-Pinz.debug.xcconfig"; sourceTree = "<group>"; };
@@ -371,6 +373,7 @@
 		13B07FAE1A68108700A75B9A /* Pinz */ = {
 			isa = PBXGroup;
 			children = (
+				1F2F2A471E88D57B0075988C /* configuration.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -811,6 +814,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				1F2F2A481E88D57B0075988C /* configuration.plist in Resources */,
 				1F8022B11E0CD9DC002FA3D9 /* FontAwesome.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);

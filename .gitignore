@@ -29,6 +29,10 @@ Pods/
 .idea
 .gradle
 local.properties
+strings.xml
+
+# iOS
+configuration.plist
 
 # node.js
 #
