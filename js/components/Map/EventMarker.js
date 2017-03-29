@@ -27,27 +27,12 @@ const styles = StyleSheet.create({
   }
 });
 
-// TODO: Use the new LANDMARKS object instead of array.
-//       Supply coordinates of event based on name of location.
-//       (Like a key, value Map, mentioned in landmarks.js).
-//       This is faster/easier than looping through a giant array.
-//       This may eventually change to a giant JSON object.
-
-const getEventCoords = (event) => {
-  const landmarks = LANDMARKS.filter(
-    landmark => landmark.NAME === event.location
-  );
-
+const getEventCoords = event => LANDMARKS[event.location] || LANDMARKS['Student Union'];
   /*
     TODO: If the event matches none of the predefined landmark regions, then
     a custom latlng region was defined for the event, this will need to be taken
     care of in the future! (Otherwise, these events default to the SU)
   */
-  return landmarks.length > 0 ? landmarks[0].REGION : {
-    latitude: 28.601660,
-    longitude: -81.200788,
-  };
-};
 
 // Supply a custom marker image based on category of event.
 const getEventImage = (event) => {
